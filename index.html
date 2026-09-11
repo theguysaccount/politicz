@@ -1,199 +1,548 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Politicz</title>
-<meta name="description" content="Type your address: which body governs your street, when it next meets, what notice the law owes you, and whether you are legally allowed to speak in the room.">
-<link rel="canonical" href="https://politicz.org/">
-<link rel="icon" type="image/png" href="data:image/png;base64,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">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Politicz">
-<meta property="og:title" content="Politicz">
-<meta property="og:description" content="You may legally watch your government meet. In 33 of 51 US jurisdictions you may not legally speak.">
-<meta property="og:url" content="https://politicz.org/">
-<meta property="og:image" content="https://politicz.org/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Politicz">
-<meta name="twitter:description" content="You may legally watch your government meet. In 33 of 51 US jurisdictions you may not legally speak.">
-<meta name="twitter:image" content="https://politicz.org/og.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Cinzel:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="/politicz.css">
-</head>
-<body>
-<div class="wrap">
-  <header class="mast">
-    <div class="mast-row">
-      <a class="mark" href="/" aria-label="Politicz home">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="1" width="22" height="22" fill="none" stroke="var(--verd-ink)" stroke-width="1.6"/><path d="M4 5h16v3.2h-1.5V19h-3.7V8.2H9.2V19H5.5V8.2H4z" fill="var(--ochre)"/></svg>
-        <span>POLITICZ</span>
-      </a>
-      <nav class="mast-nav" aria-label="Sections">
-        <a href="/" aria-current="page">Your government</a>
-        <a href="/law.html">The right to speak</a>
-        <a href="/test.html">The idiot test</a>
-        <a href="/thesis.html">The thesis</a>
-        <button class="themebtn" type="button">Theme</button>
-      </nav>
-    </div>
-  </header>
-</div>
-<div class="wrap">
-<section class="hero">
-  <h1>Politics is not what you watch.<br><em>It is the things of the people who live here.</em></h1>
-  <p class="sub">Type your address. This tells you which body governs your street, where its calendar lives, what notice the law owes you before it meets — and whether you are legally allowed to speak in the room.</p>
-
-  <div class="instrument">
-    <div class="inst-head">
-      <div class="t">Jurisdiction lookup</div>
-      <div class="t mono">US Census Geocoder &middot; 5 Calls</div>
-    </div>
-    <div class="inst-body">
-      <form class="field" id="addrForm" autocomplete="off">
-        <input type="text" id="addr" placeholder="1600 Pennsylvania Ave NW, Washington, DC 20500" aria-label="Your street address">
-        <button class="go" id="goBtn" type="submit">Look up</button>
-      </form>
-      <div class="orline">or choose it yourself</div>
-      <div class="field">
-        <select id="selState" aria-label="State"></select>
-        <select id="selCity" aria-label="City"></select>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Politicz — Your city. Your voice. Your move.</title>
+    <meta
+      name="description"
+      content="Find your local government, understand the rules for taking part, and turn something you care about into one practical next step."
+    />
+    <link rel="canonical" href="https://politicz.org/" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="data:image/png;base64,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"
+    />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Politicz" />
+    <meta
+      property="og:title"
+      content="Politicz — Your city. Your voice. Your move."
+    />
+    <meta
+      property="og:description"
+      content="Find your local government, understand the rules for taking part, and turn something you care about into one practical next step."
+    />
+    <meta property="og:url" content="https://politicz.org/" />
+    <meta property="og:image" content="https://politicz.org/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Politicz — Your city. Your voice. Your move."
+    />
+    <meta
+      name="twitter:description"
+      content="Find your local government, understand the rules for taking part, and turn something you care about into one practical next step."
+    />
+    <meta name="twitter:image" content="https://politicz.org/og.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="/politicz.css" />
+  </head>
+  <body class="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap mast-row">
+        <a class="mark" href="/" aria-label="Politicz home">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect
+              x="1"
+              y="1"
+              width="22"
+              height="22"
+              fill="none"
+              stroke="var(--verd-ink)"
+              stroke-width="1.6"
+            />
+            <path
+              d="M4 5h16v3.2h-1.5V19h-3.7V8.2H9.2V19H5.5V8.2H4z"
+              fill="var(--ochre)"
+            />
+          </svg>
+          <span>POLITICZ</span>
+        </a>
+        <nav class="mast-nav" aria-label="Main navigation">
+          <a href="/#find" data-page="index.html">Find your government</a
+          ><a href="/law.html" data-page="law.html">Know your rights</a
+          ><a href="/thesis.html" data-page="thesis.html">Our idea</a
+          ><a href="/test.html" data-page="test.html" class="nav-quiz"
+            >The local quiz <span aria-hidden="true">↗</span></a
+          >
+          <button
+            class="themebtn"
+            type="button"
+            aria-label="Change color theme"
+            title="Change color theme"
+          >
+            ◐
+          </button>
+        </nav>
       </div>
-      <p class="status" id="status"></p>
-
-      <div id="results" hidden>
-        <div class="cards">
-          <div class="card">
-            <h4>Your next room</h4>
-            <div class="big" id="rmName">—</div>
-            <p id="rmNote"></p>
+    </header>
+    <main id="main">
+      <div class="wrap">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="status-dot"></span> A little local knowledge. A lot
+              more possibility.
+            </p>
+            <h1>Your city.<br />Your voice.<br /><em>Your move.</em></h1>
+            <p class="sub">
+              The decisions that shape your everyday life happen close to home.
+              Find who makes them, learn how to take part, and turn what you
+              care about into a next step.
+            </p>
+            <a href="#find" class="button primary"
+              >Find my starting point <span aria-hidden="true">↗</span></a
+            >
+            <p class="micro">
+              For the curious. The frustrated. The first-timers.
+            </p>
           </div>
-          <div class="card">
-            <h4>What the law owes you</h4>
-            <div class="big" id="rmLaw">—</div>
-            <p id="rmLawNote"></p>
+          <figure class="hero-art">
+            <img
+              src="/assets/people-at-the-table.png"
+              alt="Illustration of neighbors sharing ideas around a table in their community"
+              width="1122"
+              height="1402"
+              fetchpriority="high"
+            />
+            <figcaption>
+              <span class="caption-star" aria-hidden="true">✳</span
+              ><span>There’s a place<br /><strong>for you here.</strong></span>
+            </figcaption>
+            <span class="art-index" aria-hidden="true"
+              >THE THINGS OF THE PEOPLE</span
+            >
+          </figure>
+        </section>
+        <div class="journey-strip" aria-label="Your path to participating">
+          <a href="#find"><span>01</span> Find your people <b>↗</b></a
+          ><a href="#map"><span>02</span> Know the rules <b>↗</b></a
+          ><a href="#act"><span>03</span> Make your move <b>↗</b></a>
+        </div>
+      </div>
+      <section class="lookup-section" id="find">
+        <div class="wrap lookup-grid">
+          <div class="section-intro">
+            <p class="eyebrow">01 / Start where you live</p>
+            <h2>Big decisions.<br /><em>Closer than you think.</em></h2>
+            <p>
+              Your rent. The park down the road. The way your street works.
+              Local decisions touch all of it. Let’s find the people and public
+              meetings behind them.
+            </p>
+            <div class="lookup-promise">
+              <span aria-hidden="true">↳</span> A government to look up.<br />A
+              calendar to open.<br />A way to begin.
+            </div>
+          </div>
+          <div class="instrument lookup-panel">
+            <div class="inst-head">
+              <h3>Meet your local government.</h3>
+              <span class="small-tag">Free to explore</span>
+            </div>
+            <div class="inst-body">
+              <form id="addrForm" autocomplete="off">
+                <label for="addr">Your US street address</label>
+                <div class="field">
+                  <input
+                    type="text"
+                    id="addr"
+                    placeholder="Street address, city, state, ZIP"
+                    aria-describedby="addressPrivacy"
+                  /><button class="go" id="goBtn" type="submit">
+                    Find my government <span aria-hidden="true">↗</span>
+                  </button>
+                </div>
+              </form>
+              <p class="hero-note" id="addressPrivacy">
+                Your address goes to the US Census Geocoder and 5 Calls to find
+                your area and representatives. Politicz doesn’t save it.
+              </p>
+              <div class="orline">Prefer to browse?</div>
+              <div class="field selector-fields">
+                <label
+                  >State<select
+                    id="selState"
+                    aria-label="State"
+                  ></select></label
+                ><label
+                  >City or county<select id="selCity" aria-label="City"></select
+                ></label>
+              </div>
+              <p
+                class="status"
+                id="status"
+                role="status"
+                aria-live="polite"
+              ></p>
+              <div id="results" hidden>
+                <div class="cards">
+                  <div class="card">
+                    <h4>Your public meeting calendar</h4>
+                    <div class="big" id="rmName">—</div>
+                    <p id="rmNote"></p>
+                  </div>
+                  <div class="card">
+                    <h4>The participation rules</h4>
+                    <div class="big" id="rmLaw">—</div>
+                    <p id="rmLawNote"></p>
+                  </div>
+                </div>
+                <div class="people" id="people" hidden></div>
+                <p class="gaps" id="gaps"></p>
+                <a class="morelink" href="#act">Turn this into a next step ↗</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="people" id="people" hidden></div>
-        <p class="gaps" id="gaps"></p>
-      </div>
-    </div>
-  </div>
-  <p class="hero-note">Nothing is stored. Your address is used to make two public API calls and is never sent anywhere else.</p>
-</section>
-</div>
-
-<div class="wrap">
-<section id="map" class="tight">
-  <div class="eyebrow">The right you probably do not have</div>
-  <div class="col stack">
-    <h2 style="font-size:clamp(1.7rem,4.2vw,2.6rem);font-weight:900">All 51 open-meetings laws let you <em style="font-style:normal;color:var(--ink-3)">watch</em> your government meet. Thirteen let you <em style="font-style:normal;color:var(--ochre)">speak</em>.</h2>
-    <p class="lede">In the other thirty-eight, whether you may address your own city council is left to the council. Click any state to read its statute.</p>
-  </div>
-
-  <div class="mapwrap" id="mapwrap"></div>
-
-  <div class="legend" role="list">
-    <div class="lg" role="listitem"><i style="background:var(--m-hi)"></i> Guarantees public comment <b class="mono" style="margin-left:.2rem">13</b></div>
-    <div class="lg" role="listitem"><i style="background:var(--m-mid)"></i> Partial / body's discretion <b class="mono" style="margin-left:.2rem">5</b></div>
-    <div class="lg" role="listitem"><i id="lgLo" style="background:var(--m-lo)"></i> No statutory right to speak <b class="mono" style="margin-left:.2rem">33</b></div>
-  </div>
-
-  <div class="readout" id="lawOut" aria-live="polite">
-    <p style="color:var(--ink-3)">Select a state on the map — or run the lookup above and it fills itself in.</p>
-  </div>
-
-  <a class="morelink" href="/law.html">All 51 jurisdictions, with citations &#8594;</a>
-</section>
-</div>
-
-<div class="wrap">
-<section id="why" class="tight">
-  <div class="eyebrow">Why this exists</div>
-  <div class="col stack">
-    <h2 style="font-size:clamp(1.7rem,4.2vw,2.6rem);font-weight:900">Politicz. The last letter.</h2>
-    <p class="lede">Not the death of politics — the state it arrives at. Politics is a rationing system, and what it rations is the capacity to be heard. Representation was an engineering compromise with the bandwidth of 1787, and that constraint is now dissolving.</p>
-    <p>What ends with it is not government. It is the excuse. What comes back is the part the word always meant: taking part, and finding it worth doing. This institute does three things about that.</p>
-  </div>
-
-  <div class="does">
-    <a href="/law.html"><h4>One</h4><b>Publish the record</b><span>The first map of where a US citizen may <em>legally speak</em> at their own local government meeting. 51 statutes, each with its citation.</span></a>
-    <a href="#map"><h4>Two</h4><b>Build the instruments</b><span>An address becomes your jurisdiction, the notice the law owes you, your council&#8217;s calendar and the people holding your seats.</span></a>
-    <a href="#act"><h4>Three</h4><b>Run the practice</b><span>One act, dated, with a condition that can fail. The horizon is worth nothing without a Tuesday.</span></a>
-  </div>
-
-  <a class="morelink" href="/thesis.html">The full argument &#8594;</a>
-</section>
-</div>
-
-<div class="wrap">
-<section id="act" class="tight">
-  <div class="eyebrow">What to do about it</div>
-  <div class="col stack">
-    <h2 style="font-size:clamp(1.7rem,4.2vw,2.6rem);font-weight:900">One act, dated, with a condition that can fail.</h2>
-    <p class="lede">A conviction that cannot be falsified is a mood. Write down one thing you will do in the room you just found, the date you will do it by, and what would have to be true for it to have worked.</p>
-  </div>
-
-  <div class="col">
-    <div class="steps">
-      <div class="step"><div class="k mono">01</div><div class="b"><b>Read the agenda before the meeting.</b><span>The law requires it to be posted in advance precisely so that this is possible. Most agendas are read by nobody outside the building.</span></div></div>
-      <div class="step"><div class="k mono">02</div><div class="b"><b>Go once, and say nothing.</b><span>You cannot act in a room whose procedure you have never watched. One meeting removes more confusion than a year of reading.</span></div></div>
-      <div class="step"><div class="k mono">03</div><div class="b"><b>Say one specific thing, on the record.</b><span>Where your state grants no right to speak, that itself is the first item: ask the body to adopt a public-comment rule. Five states have added one by statute since 2019.</span></div></div>
-    </div>
-
-    <div class="instrument" style="margin-top:2rem">
-      <div class="inst-head"><div class="t">Your commitment</div><div class="t mono" id="cmDate"></div></div>
-      <div class="inst-body">
-        <div class="field" style="flex-direction:column;gap:.7rem">
-          <input type="text" id="cmWhat" placeholder="What you will do — e.g. read the Jan 14 agenda and email item 7 to the clerk" aria-label="What you will do">
-          <div class="field">
-            <input type="text" id="cmBy" placeholder="By when (a date)" aria-label="By when">
-            <input type="text" id="cmWho" placeholder="Whose choices this opens" aria-label="Whose choices this opens">
+      </section>
+      <section id="map" class="rights-section">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / Know the rules</p>
+              <h2>An open door.<br /><em>But an open microphone?</em></h2>
+            </div>
+            <div class="section-summary">
+              <p>
+                Being able to attend a public meeting and being able to speak at
+                it are different things. Explore the legal directory, then check
+                your local body’s comment and sign-up rules.
+              </p>
+              <a class="morelink" href="/law.html"
+                >Explore all 50 states + DC ↗</a
+              >
+            </div>
+          </div>
+          <div class="map-layout">
+            <div class="map-card">
+              <div class="map-topline">
+                <span>PUBLIC COMMENT, STATE BY STATE</span
+                ><span>Select a state ↘</span>
+              </div>
+              <div class="mapwrap" id="mapwrap"></div>
+              <div class="legend" role="list">
+                <div class="lg" role="listitem">
+                  <i style="background: var(--m-hi)"></i> Comment right
+                  identified
+                </div>
+                <div class="lg" role="listitem">
+                  <i style="background: var(--m-mid)"></i> Conditional or
+                  body-specific
+                </div>
+                <div class="lg" role="listitem">
+                  <i id="lgLo" style="background: var(--m-lo)"></i> No general
+                  right identified
+                </div>
+              </div>
+            </div>
+            <div class="rights-detail">
+              <label for="mapState">Jump to your state</label
+              ><select id="mapState">
+                <option value="">Choose a state</option>
+              </select>
+              <div class="readout" id="lawOut" aria-live="polite">
+                <span class="readout-icon" aria-hidden="true">↖</span>
+                <h3>A little preparation goes a long way.</h3>
+                <p>
+                  Choose your state to see its meeting notice rules,
+                  public-comment summary, and source links.
+                </p>
+              </div>
+              <p class="mapnote">
+                A research directory, not a live legal feed. Local rules, body
+                types, and exceptions matter.
+                <a href="/law.html#method">Read the method.</a>
+              </p>
+            </div>
           </div>
         </div>
-        <div class="copyrow">
-          <button class="go" id="cmSave" type="button">Set it</button>
-          <button class="go" id="cmCopy" type="button" style="background:transparent;color:var(--ink)">Copy it</button>
+      </section>
+      <section id="act" class="action-section">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">03 / Make your move</p>
+              <h2>
+                You don’t have to do everything.<br /><em
+                  >Start with one thing.</em
+                >
+              </h2>
+            </div>
+            <p class="section-summary">
+              You don’t need to be an expert to begin. Pick something you care
+              about, make a little time, and take it from there.
+            </p>
+          </div>
+          <div class="action-grid">
+            <div class="action-steps">
+              <article class="action-step">
+                <span class="step-number">1</span>
+                <div>
+                  <h3>Find something that matters to you.</h3>
+                  <p>
+                    Open your council’s calendar and read the agenda. Look for a
+                    decision that touches your street, your neighborhood, or
+                    someone you care about.
+                  </p>
+                </div>
+              </article>
+              <article class="action-step">
+                <span class="step-number">2</span>
+                <div>
+                  <h3>Show up. Listening counts.</h3>
+                  <p>
+                    Attend a meeting or watch a recording. See how decisions get
+                    made. Your first time can simply be about getting your
+                    bearings.
+                  </p>
+                </div>
+              </article>
+              <article class="action-step">
+                <span class="step-number">3</span>
+                <div>
+                  <h3>Bring one useful thing to the room.</h3>
+                  <p>
+                    A question. A specific experience. An idea. Check the
+                    comment rules and sign-up deadline, or ask the clerk how to
+                    submit it in writing.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="instrument commitment">
+              <div class="inst-head">
+                <span class="eyebrow">A note to your future self</span
+                ><span aria-hidden="true">↗</span>
+              </div>
+              <div class="inst-body">
+                <h3>My next small move.</h3>
+                <p class="commit-intro">
+                  Make it specific enough to actually do.
+                </p>
+                <label for="cmWhat">I will…</label
+                ><input
+                  type="text"
+                  id="cmWhat"
+                  placeholder="Read the next council meeting agenda"
+                />
+                <div class="field">
+                  <label>By this date<input type="date" id="cmBy" /></label
+                  ><label
+                    >For the benefit of<input
+                      type="text"
+                      id="cmWho"
+                      placeholder="My neighborhood"
+                  /></label>
+                </div>
+                <div class="copyrow">
+                  <button class="go" id="cmSave" type="button">
+                    Save my next step</button
+                  ><button class="go secondary" id="cmCopy" type="button">
+                    Copy
+                  </button>
+                </div>
+                <p
+                  class="status"
+                  id="cmOut"
+                  role="status"
+                  aria-live="polite"
+                ></p>
+                <p class="hero-note">
+                  Saved only in this browser. This doesn’t send a message or
+                  sign you up for anything.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="status" id="cmOut"></p>
+      </section>
+      <section id="why" class="why-section">
+        <div class="wrap why-grid">
+          <div>
+            <p class="eyebrow">Why Politicz?</p>
+            <h2>Less on the sidelines.<br /><em>More at the table.</em></h2>
+          </div>
+          <div class="why-copy">
+            <p>
+              Politics can feel like something happening somewhere else, between
+              people you’ll never meet. But it also happens in your
+              neighborhood, over decisions you can understand and help shape.
+            </p>
+            <p>
+              Politicz connects a bigger belief to a practical beginning: the
+              future of government should make it easier for ordinary people to
+              be heard. Today, that starts with finding your room.
+            </p>
+            <div class="why-links">
+              <a href="/thesis.html">Read the bigger idea ↗</a
+              ><a href="/test.html">Try the local knowledge quiz ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="coalition" aria-label="Part of something bigger">
+        <div class="wrap">
+          <div class="eyebrow">Part of something bigger</div>
+          <p class="co-note">
+            Politicz is part of the
+            <a
+              href="https://www.america.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >America.co</a
+            >
+            coalition — independent projects building technology, media and
+            civic infrastructure for a healthier American democracy. Explore the
+            independent projects in the coalition.
+          </p>
+          <div class="co-grid">
+            <a
+              class="co-hub"
+              href="https://www.america.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="America.co"
+              ><span class="r">AMERICA</span><span class="b">.CO</span></a
+            >
+            <a
+              href="https://www.pres2028.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Pres2028"
+              ><img
+                src="co-pres2028.png"
+                alt="Pres2028"
+                loading="lazy"
+                height="34"
+            /></a>
+            <a
+              href="https://www.kingsfoil.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Kingsfoil"
+              ><img
+                class="tall"
+                src="co-kingsfoil.png"
+                alt="Kingsfoil"
+                loading="lazy"
+                height="34"
+            /></a>
+            <a
+              href="https://www.election.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Election.org"
+              ><img
+                src="co-election.png"
+                alt="Election.org"
+                loading="lazy"
+                height="34"
+            /></a>
+            <a
+              href="https://www.dia.wiki/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="DIA"
+              ><img
+                class="wide-sm"
+                src="co-dia.png"
+                alt="DIA"
+                loading="lazy"
+                height="34"
+            /></a>
+            <a
+              href="https://www.impactline.org/?country=us"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Impactline"
+              ><img
+                src="co-impactline.png"
+                alt="Impactline"
+                loading="lazy"
+                height="34"
+            /></a>
+            <a
+              href="https://www.voteimpact.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Vote Impact"
+              ><img
+                src="co-voteimpact.png"
+                alt="Vote Impact"
+                loading="lazy"
+                height="34"
+            /></a>
+            <a
+              href="https://www.pollitician.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Pollitician.org"
+              ><img
+                src="co-pollitician.png"
+                alt="Pollitician.org"
+                loading="lazy"
+                height="34"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <a class="mark" href="/" aria-label="Politicz home">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect
+                x="1"
+                y="1"
+                width="22"
+                height="22"
+                fill="none"
+                stroke="var(--verd-ink)"
+                stroke-width="1.6"
+              />
+              <path
+                d="M4 5h16v3.2h-1.5V19h-3.7V8.2H9.2V19H5.5V8.2H4z"
+                fill="var(--ochre)"
+              />
+            </svg>
+            <span>POLITICZ</span>
+          </a>
+          <p>For the people who live here.</p>
+          <a href="/#find"
+            >Find your starting point <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="footer-bottom">
+          <p>
+            Independent civic tools. No party endorsements. No account needed.
+          </p>
+          <div>
+            <a href="/law.html#method">Sources &amp; method</a
+            ><a href="https://github.com/theguysaccount/politicz"
+              >Open source ↗</a
+            >
+          </div>
+        </div>
+        <p class="stamp">
+          Legal and calendar directory: existing research snapshot. Check the
+          linked official sources for current rules and dates.
+        </p>
       </div>
-    </div>
-
-    <a class="morelink" href="/test.html">Or find out where you currently stand &#8594;</a>
-  </div>
-</section>
-</div>
-<section class="coalition" aria-label="Coalition ecosystem">
-  <div class="wrap">
-    <div class="eyebrow">Coalition ecosystem</div>
-    <p class="co-note">Politicz is part of the <a href="https://www.america.co/" target="_blank" rel="noopener noreferrer">America.co</a> coalition — independent projects building technology, media and civic infrastructure for a healthier American democracy. Each one is its own thing; none of them speaks for the others.</p>
-    <div class="co-grid">
-      <a class="co-hub" href="https://www.america.co/" target="_blank" rel="noopener noreferrer" aria-label="America.co"><span class="r">AMERICA</span><span class="b">.CO</span></a>
-      <a href="https://www.pres2028.com/" target="_blank" rel="noopener noreferrer" aria-label="Pres2028"><img src="co-pres2028.png" alt="Pres2028" loading="lazy" height="34"></a>
-      <a href="https://www.kingsfoil.ai/" target="_blank" rel="noopener noreferrer" aria-label="Kingsfoil"><img class="tall" src="co-kingsfoil.png" alt="Kingsfoil" loading="lazy" height="34"></a>
-      <a href="https://www.election.org/" target="_blank" rel="noopener noreferrer" aria-label="Election.org"><img src="co-election.png" alt="Election.org" loading="lazy" height="34"></a>
-      <a href="https://www.dia.wiki/" target="_blank" rel="noopener noreferrer" aria-label="DIA"><img class="wide-sm" src="co-dia.png" alt="DIA" loading="lazy" height="34"></a>
-      <a href="https://www.impactline.org/?country=us" target="_blank" rel="noopener noreferrer" aria-label="Impactline"><img src="co-impactline.png" alt="Impactline" loading="lazy" height="34"></a>
-      <a href="https://www.voteimpact.org/" target="_blank" rel="noopener noreferrer" aria-label="Vote Impact"><img src="co-voteimpact.png" alt="Vote Impact" loading="lazy" height="34"></a>
-      <a href="https://www.pollitician.org/" target="_blank" rel="noopener noreferrer" aria-label="Pollitician.org"><img src="co-pollitician.png" alt="Pollitician.org" loading="lazy" height="34"></a>
-    </div>
-  </div>
-</section>
-
-<div class="wrap">
-<footer>
-  <p class="fin">TA POLITIKÁ — the things of the people who live here.</p>
-  <p style="margin-top:.9rem">POLITICZ.ORG — an institute for what governance becomes when being heard stops being scarce. Non-partisan by construction: nothing on this site identifies a party, and the two facts it turns on — what your government must post, and whether you may speak — are the same facts whoever you vote for.</p>
-  <p style="margin-top:.6rem" class="mono stamp"></p>
-  <p style="margin-top:.6rem"><a href="/law.html#method" style="color:var(--ochre);text-decoration:none;border-bottom:1px solid currentColor">Sources &amp; method</a></p>
-</footer>
-</div>
-
-<script src="/politicz-data.js" defer></script>
-<script src="/politicz.js" defer></script>
-</body>
+    </footer>
+    <script src="/politicz-data.js" defer></script>
+    <script src="/politicz.js" defer></script>
+  </body>
 </html>
