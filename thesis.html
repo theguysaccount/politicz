@@ -1,174 +1,520 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The End of Politics</title>
-<meta name="description" content="Z is the last letter. Politics is a rationing system, and what it rations is the capacity to be heard. The argument for why the end of politics is its return.">
-<link rel="canonical" href="https://politicz.org/thesis.html">
-<link rel="icon" type="image/png" href="data:image/png;base64,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">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Politicz">
-<meta property="og:title" content="The End of Politics — Politicz">
-<meta property="og:description" content="You may legally watch your government meet. In 33 of 51 US jurisdictions you may not legally speak.">
-<meta property="og:url" content="https://politicz.org/thesis.html">
-<meta property="og:image" content="https://politicz.org/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The End of Politics — Politicz">
-<meta name="twitter:description" content="You may legally watch your government meet. In 33 of 51 US jurisdictions you may not legally speak.">
-<meta name="twitter:image" content="https://politicz.org/og.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Cinzel:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="/politicz.css">
-</head>
-<body>
-<div class="wrap">
-  <header class="mast">
-    <div class="mast-row">
-      <a class="mark" href="/" aria-label="Politicz home">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="1" width="22" height="22" fill="none" stroke="var(--verd-ink)" stroke-width="1.6"/><path d="M4 5h16v3.2h-1.5V19h-3.7V8.2H9.2V19H5.5V8.2H4z" fill="var(--ochre)"/></svg>
-        <span>POLITICZ</span>
-      </a>
-      <nav class="mast-nav" aria-label="Sections">
-        <a href="/">Your government</a>
-        <a href="/law.html">The right to speak</a>
-        <a href="/test.html">The idiot test</a>
-        <a href="/thesis.html" aria-current="page">The thesis</a>
-        <button class="themebtn" type="button">Theme</button>
-      </nav>
-    </div>
-  </header>
-</div>
-<div class="wrap">
-<section class="phero">
-  <a class="backhome" href="/">&#8592; Politicz</a>
-  <h1>The end of politics is the <em>return</em> of politics.</h1>
-  <p class="sub">Z is the last letter. Politicz is politics with the end attached — not the death of the thing, the state it arrives at. This is the argument for why that is a real claim and not a slogan, and how it could turn out to be wrong.</p>
-</section>
-</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our idea — Politicz</title>
+    <meta
+      name="description"
+      content="What if taking part felt worth it? The case for making public knowledge, meaningful participation, and better government part of everyday life."
+    />
+    <link rel="canonical" href="https://politicz.org/thesis.html" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="data:image/png;base64,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"
+    />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Politicz" />
+    <meta property="og:title" content="Our idea — Politicz" />
+    <meta
+      property="og:description"
+      content="What if taking part felt worth it? The case for making public knowledge, meaningful participation, and better government part of everyday life."
+    />
+    <meta property="og:url" content="https://politicz.org/thesis.html" />
+    <meta property="og:image" content="https://politicz.org/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Our idea — Politicz" />
+    <meta
+      name="twitter:description"
+      content="What if taking part felt worth it? The case for making public knowledge, meaningful participation, and better government part of everyday life."
+    />
+    <meta name="twitter:image" content="https://politicz.org/og.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="/politicz.css" />
+  </head>
+  <body class="interior">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap mast-row">
+        <a class="mark" href="/" aria-label="Politicz home">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect
+              x="1"
+              y="1"
+              width="22"
+              height="22"
+              fill="none"
+              stroke="var(--verd-ink)"
+              stroke-width="1.6"
+            />
+            <path
+              d="M4 5h16v3.2h-1.5V19h-3.7V8.2H9.2V19H5.5V8.2H4z"
+              fill="var(--ochre)"
+            />
+          </svg>
+          <span>POLITICZ</span>
+        </a>
+        <nav class="mast-nav" aria-label="Main navigation">
+          <a href="/#find" data-page="index.html">Find your government</a
+          ><a href="/law.html" data-page="law.html">Know your rights</a
+          ><a href="/thesis.html" data-page="thesis.html" aria-current="page"
+            >Our idea</a
+          ><a href="/test.html" data-page="test.html" class="nav-quiz"
+            >The local quiz <span aria-hidden="true">↗</span></a
+          >
+          <button
+            class="themebtn"
+            type="button"
+            aria-label="Change color theme"
+            title="Change color theme"
+          >
+            ◐
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="wrap">
+        <section class="phero">
+          <a class="backhome" href="/">&#8592; Politicz</a>
+          <h1>What if taking part<br /><em>felt worth it?</em></h1>
+          <p class="sub">
+            Politicz begins with a simple belief: the people who live with a
+            decision should have a meaningful way to shape it. Our bigger idea
+            is that better access to knowledge and better tools for listening
+            can make that ordinary. Here is the argument—and the questions it
+            still has to answer.
+          </p>
+        </section>
+      </div>
 
-<div class="wrap">
-<section id="word" class="tight">
-  <div class="eyebrow"><span class="num">I</span> The word</div>
-  <div class="col stack" style="margin-bottom:2.2rem">
-    <p class="lede">Four words have been quietly redefined underneath us. Put each one back on its root and the argument for staying out of politics stops making sense.</p>
-  </div>
+      <div class="wrap">
+        <section id="word" class="tight">
+          <div class="eyebrow"><span class="num">I</span> The word</div>
+          <div class="col stack" style="margin-bottom: 2.2rem">
+            <p class="lede">
+              Start with the people, the place, and the choices at stake. These
+              older words offer a way to think about politics as something we
+              take part in, together.
+            </p>
+          </div>
 
-  <div class="plates">
-    <div class="plate reveal wide">
-      <div class="term">IDIŌTĒS</div>
-      <div class="root"><span class="gk">ἰδιώτης</span> &middot; ancient greek</div>
-      <p class="gloss">A <b>private person</b>. In classical Athens, the ordinary word for someone who held no office and took no part in the common business — as opposed to a <b>politēs</b> (πολίτης), a citizen who did. It carried no charge of stupidity. That came later, through Latin <i>idiota</i>, "layman, unlearned person," and only then into English as an insult.</p>
-      <p class="kicker">The Greeks had a plain word for a person who left the common things to other people. We still use it. We just forgot it was a description of a choice.</p>
-    </div>
+          <div class="plates">
+            <div class="plate reveal wide">
+              <div class="term">IDIŌTĒS</div>
+              <div class="root">
+                <span class="gk">ἰδιώτης</span> &middot; ancient greek
+              </div>
+              <p class="gloss">
+                The Greek word can mean a <b>private person</b>, an individual,
+                or a layperson. We use it here as a starting point for a
+                question, not a label for anyone: what would make it easier to
+                move from private concern to shared action?
+              </p>
+              <p class="kicker">
+                You can care about your community and still be unsure where to
+                begin. That is a starting point worth designing for.
+              </p>
+            </div>
 
-    <div class="plate reveal">
-      <div class="term">POLIS &middot; POLITĒS</div>
-      <div class="root"><span class="gk">πόλις &middot; πολίτης</span> &middot; ancient greek</div>
-      <p class="gloss"><b>Politics</b> comes from <i>ta politiká</i> — "the things of the citizens," from <i>polis</i>, the place you live. Not campaigns. Not parties. Not the noise. <b>The things of the people who live here.</b></p>
-      <p class="kicker">"I'm not political" parses as: I am not one of the people who live here.</p>
-    </div>
+            <div class="plate reveal">
+              <div class="term">POLIS &middot; POLITĒS</div>
+              <div class="root">
+                <span class="gk">πόλις &middot; πολίτης</span> &middot; ancient
+                greek
+              </div>
+              <p class="gloss">
+                <b>Politics</b> comes from <i>ta politiká</i> — "the things of
+                the citizens," from <i>polis</i>, the place you live. Not
+                campaigns. Not parties. Not the noise.
+                <b>The things of the people who live here.</b>
+              </p>
+              <p class="kicker">
+                You already have a stake in the place you live. Participation
+                should help you act on it.
+              </p>
+            </div>
 
-    <div class="plate reveal">
-      <div class="term">POSSE</div>
-      <div class="root">latin &middot; to be able</div>
-      <p class="gloss"><b>Power</b> is <i>posse</i> — to be able. Not domination; capacity. Every argument that power is dirty ends in the same place: the people who believe it hand their capacity to the people who don't.</p>
-      <p class="kicker">You are not against power. You are without it.</p>
-    </div>
+            <div class="plate reveal">
+              <div class="term">POSSE</div>
+              <div class="root">latin &middot; to be able</div>
+              <p class="gloss">
+                <b>Power</b> is <i>posse</i> — to be able. Not domination;
+                capacity. Every argument that power is dirty ends in the same
+                place: the people who believe it hand their capacity to the
+                people who don't.
+              </p>
+              <p class="kicker">
+                A useful kind of power: having more ways to make life better,
+                together.
+              </p>
+            </div>
 
-    <div class="plate reveal wide">
-      <div class="term">TO WIN &middot; TO LOVE</div>
-      <div class="root">the test that fits in one line</div>
-      <p class="gloss">Take <b>winning</b> to mean gaining choices, and <b>losing</b> to mean losing them. Then take Forrest Landry's definition — <b>love is that which enables choice</b> — and the two collapse into one measurable question you can put to any bill, budget, hire, or vote:</p>
-      <p class="kicker" style="font-size:1.18rem;color:var(--ochre)">Whose choices did this open, and whose did it close?</p>
-    </div>
-  </div>
-</section>
-</div>
+            <div class="plate reveal wide">
+              <div class="term">TO WIN &middot; TO LOVE</div>
+              <div class="root">the test that fits in one line</div>
+              <p class="gloss">
+                Take <b>winning</b> to mean gaining choices, and
+                <b>losing</b> to mean losing them. Then take Forrest Landry's
+                definition — <b>love is that which enables choice</b> — and the
+                two collapse into one measurable question you can put to any
+                bill, budget, hire, or vote:
+              </p>
+              <p class="kicker" style="font-size: 1.18rem; color: var(--ochre)">
+                Whose choices did this open, and whose did it close?
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
 
-<div class="wrap">
-<section id="argument" class="tight">
-  <div class="eyebrow"><span class="num">II</span> The argument</div>
-  <div class="col stack" style="margin-bottom:1.6rem">
-    <h2 style="font-size:clamp(1.7rem,4.2vw,2.6rem);font-weight:900">Politics is a rationing system. What it rations is the capacity to be heard.</h2>
-    <p class="lede">The end of politics has been announced twice, and both times the claim was that one side had won — Engels expected the state to wither away once class conflict was settled; Fukuyama declared history over once liberal democracy had no rival. Neither arrived, because neither named what politics is actually made of.</p>
-  </div>
+      <div class="wrap">
+        <section id="argument" class="tight">
+          <div class="eyebrow"><span class="num">II</span> The argument</div>
+          <div class="col stack" style="margin-bottom: 1.6rem">
+            <h2
+              style="font-size: clamp(1.7rem, 4.2vw, 2.6rem); font-weight: 900"
+            >
+              Our thesis: a better public life starts with more people being
+              heard.
+            </h2>
+            <p class="lede">
+              The end of politics has been announced twice, and both times the
+              claim was that one side had won — Engels expected the state to
+              wither away once class conflict was settled; Fukuyama declared
+              history over once liberal democracy had no rival. Neither arrived,
+              because neither named what politics is actually made of.
+            </p>
+          </div>
 
-  <div class="col stack">
-    <p>It is made of scarcity — not of power, but of <b>bandwidth</b>. Three hundred and forty million people cannot deliberate, so the founders built a compressor. Madison names it in Federalist 10 as the very thing that separates a republic from a democracy: "the delegation of the government, in the latter, to a small number of citizens elected by the rest." Representation was not the ideal. It was an engineering compromise with the physics of 1787 — the speed of a horse, the reach of a press, the size of a room.</p>
-    <p>Nearly every ugly feature of modern politics is downstream of that compression. A vote is one bit every two years. A poll is an answer to someone else&#8217;s question. A campaign is what you build when attention is the scarce good, and outrage is what wins when attention is rationed. None of that is human nature. It is what a narrow channel does to a species that has more to say than the channel can carry.</p>
-  </div>
+          <div class="col stack">
+            <p>
+              It is made of scarcity — not of power, but of <b>bandwidth</b>.
+              Three hundred and forty million people cannot deliberate, so the
+              founders built a compressor. Madison names it in Federalist 10 as
+              the very thing that separates a republic from a democracy: "the
+              delegation of the government, in the latter, to a small number of
+              citizens elected by the rest." We see representation, in part, as
+              a response to the communication limits of 1787 — the speed of a
+              horse, the reach of a press, the size of a room.
+            </p>
+            <p>
+              Our argument is that many frustrating features of modern politics
+              are reinforced by that compression. A vote is one bit every two
+              years. A poll is an answer to someone else&#8217;s question. A
+              campaign is what you build when attention is the scarce good, and
+              outrage is what wins when attention is rationed. A narrow channel
+              can reward spectacle over understanding. We believe a public with
+              more ways to speak and listen could do better.
+            </p>
+          </div>
 
-  <div class="col">
-    <div class="shifts">
-      <div class="shift"><div class="k">Shift I</div><div class="b"><b>The record becomes readable.</b><span>What governments actually do is already public and almost entirely unread — agendas, budgets, transcripts, contracts, produced faster than any citizenry could get through them. Machines that read are the first instrument in history that can make the whole record legible to the people it is about. <a href="/law.html" style="color:var(--ochre);text-decoration:none;border-bottom:1px solid currentColor">This site is a small, literal instance of that</a>: 51 statutes and 135 meeting calendars, read once so you do not have to.</span></div></div>
-      <div class="shift"><div class="k">Shift II</div><div class="b"><b>Fewer fights are zero-sum.</b><span>A large share of politics is the allocation of scarce things. To the degree that automation and abundance make a thing cheap, the argument over who gets it stops being politics and becomes logistics. That does not end disagreement — it moves the disagreement up, from who gets what to what we actually want.</span></div></div>
-      <div class="shift"><div class="k">Shift III</div><div class="b"><b>Coordination without compression.</b><span>A public can now do more than be counted. It can read the same record, argue, converge, and state a considered position at a scale that used to require someone to stand in for it. The representative was a compression artifact. The thing being compressed is now able to speak for itself.</span></div></div>
-    </div>
+          <div class="col">
+            <div class="shifts">
+              <div class="shift">
+                <div class="k">Shift I</div>
+                <div class="b">
+                  <b>The record becomes readable.</b
+                  ><span
+                    >What governments actually do is already public and almost
+                    entirely unread — agendas, budgets, transcripts, contracts,
+                    produced faster than any citizenry could get through them.
+                    Machines that read are the first instrument in history that
+                    can make the whole record legible to the people it is about.
+                    <a
+                      href="/law.html"
+                      style="
+                        color: var(--ochre);
+                        text-decoration: none;
+                        border-bottom: 1px solid currentColor;
+                      "
+                      >This site is a small experiment in that</a
+                    >: a directory of legal sources and public calendars that
+                    gives you a place to start.</span
+                  >
+                </div>
+              </div>
+              <div class="shift">
+                <div class="k">Shift II</div>
+                <div class="b">
+                  <b>Fewer fights are zero-sum.</b
+                  ><span
+                    >A large share of politics is the allocation of scarce
+                    things. To the degree that automation and abundance make a
+                    thing cheap, the argument over who gets it stops being
+                    politics and becomes logistics. That does not end
+                    disagreement — it moves the disagreement up, from who gets
+                    what to what we actually want.</span
+                  >
+                </div>
+              </div>
+              <div class="shift">
+                <div class="k">Shift III</div>
+                <div class="b">
+                  <b>Coordination without compression.</b
+                  ><span
+                    >A public can now do more than be counted. It can read the
+                    same record, argue, converge, and state a considered
+                    position at a scale that used to require someone to stand in
+                    for it. Representatives still make decisions and carry
+                    responsibilities. Better public deliberation could help more
+                    people shape the choices in front of them.</span
+                  >
+                </div>
+              </div>
+            </div>
 
-    <div class="pullquote">What ends is not government. What ends is the excuse.
-      <div class="attrib">too many, too slow, too uninformed, too far away — every one of those was an argument about bandwidth</div></div>
+            <div class="pullquote">
+              What ends is not government. What ends is the excuse.
+              <div class="attrib">
+                too many, too slow, too uninformed, too far away — every one of
+                those was an argument about bandwidth
+              </div>
+            </div>
 
-    <div class="stack" style="margin-top:2rem">
-      <p>What comes back is the part the word always meant. Civic duty framed as a chore is a modern artifact — it is what taking part feels like when your only available move is to be counted once every two years. Athens paid its citizens to sit on juries and treated the day as ordinary life rather than sacrifice. <b>The measure of a working republic is not turnout. It is whether taking part is worth doing.</b></p>
-      <p>We shipped version one, and the world copied the pattern: a written constitution, enumerated powers, a bill of rights. That version also excluded most of the people it claimed to speak for, and took two centuries of amendment to partly repair. A second one that is merely more efficient is not an improvement. It has to be built, from the start, to widen what everyone can choose — which is the only definition of winning this institute uses.</p>
-    </div>
+            <div class="stack" style="margin-top: 2rem">
+              <p>
+                What comes back is the part the word always meant. Civic duty
+                framed as a chore is a modern artifact — it is what taking part
+                feels like when your only available move is to be counted once
+                every two years. Athens paid its citizens to sit on juries and
+                treated the day as ordinary life rather than sacrifice.
+                <b
+                  >The measure of a working republic is not turnout. It is
+                  whether taking part is worth doing.</b
+                >
+              </p>
+              <p>
+                We shipped version one, and the world copied the pattern: a
+                written constitution, enumerated powers, a bill of rights. That
+                version also excluded most of the people it claimed to speak
+                for, and took two centuries of amendment to partly repair. A
+                second one that is merely more efficient is not an improvement.
+                It has to be built, from the start, to widen what everyone can
+                choose — which is the only definition of winning this institute
+                uses.
+              </p>
+            </div>
 
-    <div class="refuse" style="margin-top:2rem">
-      <h4>How this claim could be wrong</h4>
-      <ul>
-        <li>If the record becomes legible and still nobody reads it.</li>
-        <li>If coordination at scale arrives and produces only faster, better-organised outrage.</li>
-        <li>If abundance shows up and the fights get worse rather than moving up a level.</li>
-        <li>If, after all of it, taking part still feels like a chore — then the thesis was wrong, and saying so here is the point of writing it down.</li>
-      </ul>
-    </div>
+            <div class="refuse" style="margin-top: 2rem">
+              <h4>How this claim could be wrong</h4>
+              <ul>
+                <li>
+                  If the record becomes legible and still nobody reads it.
+                </li>
+                <li>
+                  If coordination at scale arrives and produces only faster,
+                  better-organised outrage.
+                </li>
+                <li>
+                  If abundance shows up and the fights get worse rather than
+                  moving up a level.
+                </li>
+                <li>
+                  If, after all of it, taking part still feels like a chore —
+                  then the thesis was wrong, and saying so here is the point of
+                  writing it down.
+                </li>
+              </ul>
+            </div>
 
-    <div class="refuse" style="margin-top:1.2rem">
-      <h4>What this site refuses to do</h4>
-      <ul>
-        <li>No feed, no likes, no follower count, no streak.</li>
-        <li>No petition and no pledge signature. A signature is not an act.</li>
-        <li>No party, no candidate, no endorsement, no donation button.</li>
-        <li>No account. Your address is used to make two public API calls and is never stored or transmitted anywhere else.</li>
-        <li>No invented numbers. Every figure comes from a <a href="/law.html#method" style="color:var(--ochre);text-decoration:none;border-bottom:1px solid currentColor">named source</a>, and where the record is incomplete it says so instead of filling the gap.</li>
-      </ul>
-    </div>
+            <div class="refuse" style="margin-top: 1.2rem">
+              <h4>What this site refuses to do</h4>
+              <ul>
+                <li>No feed, no likes, no follower count, no streak.</li>
+                <li>
+                  No petition and no pledge signature. A signature is not an
+                  act.
+                </li>
+                <li>
+                  No party, no candidate, no endorsement, no donation button.
+                </li>
+                <li>
+                  No account. Address lookups send your address to the US Census
+                  Geocoder and 5 Calls. Politicz does not save your address.
+                  Your optional next-step note and color preference are stored
+                  only in your browser.
+                </li>
+                <li>
+                  No invented numbers. Every figure comes from a
+                  <a
+                    href="/law.html#method"
+                    style="
+                      color: var(--ochre);
+                      text-decoration: none;
+                      border-bottom: 1px solid currentColor;
+                    "
+                    >named source</a
+                  >, and where the record is incomplete it says so instead of
+                  filling the gap.
+                </li>
+              </ul>
+            </div>
 
-    <a class="morelink" href="/">Find your own government &#8594;</a>
-  </div>
-</section>
-</div>
-<section class="coalition" aria-label="Coalition ecosystem">
-  <div class="wrap">
-    <div class="eyebrow">Coalition ecosystem</div>
-    <p class="co-note">Politicz is part of the <a href="https://www.america.co/" target="_blank" rel="noopener noreferrer">America.co</a> coalition — independent projects building technology, media and civic infrastructure for a healthier American democracy. Each one is its own thing; none of them speaks for the others.</p>
-    <div class="co-grid">
-      <a class="co-hub" href="https://www.america.co/" target="_blank" rel="noopener noreferrer" aria-label="America.co"><span class="r">AMERICA</span><span class="b">.CO</span></a>
-      <a href="https://www.pres2028.com/" target="_blank" rel="noopener noreferrer" aria-label="Pres2028"><img src="co-pres2028.png" alt="Pres2028" loading="lazy" height="34"></a>
-      <a href="https://www.kingsfoil.ai/" target="_blank" rel="noopener noreferrer" aria-label="Kingsfoil"><img class="tall" src="co-kingsfoil.png" alt="Kingsfoil" loading="lazy" height="34"></a>
-      <a href="https://www.election.org/" target="_blank" rel="noopener noreferrer" aria-label="Election.org"><img src="co-election.png" alt="Election.org" loading="lazy" height="34"></a>
-      <a href="https://www.dia.wiki/" target="_blank" rel="noopener noreferrer" aria-label="DIA"><img class="wide-sm" src="co-dia.png" alt="DIA" loading="lazy" height="34"></a>
-      <a href="https://www.impactline.org/?country=us" target="_blank" rel="noopener noreferrer" aria-label="Impactline"><img src="co-impactline.png" alt="Impactline" loading="lazy" height="34"></a>
-      <a href="https://www.voteimpact.org/" target="_blank" rel="noopener noreferrer" aria-label="Vote Impact"><img src="co-voteimpact.png" alt="Vote Impact" loading="lazy" height="34"></a>
-      <a href="https://www.pollitician.org/" target="_blank" rel="noopener noreferrer" aria-label="Pollitician.org"><img src="co-pollitician.png" alt="Pollitician.org" loading="lazy" height="34"></a>
-    </div>
-  </div>
-</section>
+            <a class="morelink" href="/">Find your own government &#8594;</a>
+          </div>
+        </section>
+      </div>
+      <section class="coalition" aria-label="Coalition ecosystem">
+        <div class="wrap">
+          <div class="eyebrow">Coalition ecosystem</div>
+          <p class="co-note">
+            Politicz is part of the
+            <a
+              href="https://www.america.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >America.co</a
+            >
+            coalition — independent projects building technology, media and
+            civic infrastructure for a healthier American democracy. Each one is
+            its own thing; none of them speaks for the others.
+          </p>
+          <div class="co-grid">
+            <a
+              class="co-hub"
+              href="https://www.america.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="America.co"
+              ><span class="r">AMERICA</span><span class="b">.CO</span></a
+            >
+            <a
+              href="https://www.pres2028.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Pres2028"
+              ><img
+                src="co-pres2028.png"
+                alt="Pres2028"
+                loading="lazy"
+                height="34"
+            /></a>
+            <a
+              href="https://www.kingsfoil.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Kingsfoil"
+              ><img
+                class="tall"
+                src="co-kingsfoil.png"
+                alt="Kingsfoil"
+                loading="lazy"
+                height="34"
+            /></a>
+            <a
+              href="https://www.election.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Election.org"
+              ><img
+                src="co-election.png"
+                alt="Election.org"
+                loading="lazy"
+                height="34"
+            /></a>
+            <a
+              href="https://www.dia.wiki/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="DIA"
+              ><img
+                class="wide-sm"
+                src="co-dia.png"
+                alt="DIA"
+                loading="lazy"
+                height="34"
+            /></a>
+            <a
+              href="https://www.impactline.org/?country=us"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Impactline"
+              ><img
+                src="co-impactline.png"
+                alt="Impactline"
+                loading="lazy"
+                height="34"
+            /></a>
+            <a
+              href="https://www.voteimpact.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Vote Impact"
+              ><img
+                src="co-voteimpact.png"
+                alt="Vote Impact"
+                loading="lazy"
+                height="34"
+            /></a>
+            <a
+              href="https://www.pollitician.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Pollitician.org"
+              ><img
+                src="co-pollitician.png"
+                alt="Pollitician.org"
+                loading="lazy"
+                height="34"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <a class="mark" href="/" aria-label="Politicz home">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect
+                x="1"
+                y="1"
+                width="22"
+                height="22"
+                fill="none"
+                stroke="var(--verd-ink)"
+                stroke-width="1.6"
+              />
+              <path
+                d="M4 5h16v3.2h-1.5V19h-3.7V8.2H9.2V19H5.5V8.2H4z"
+                fill="var(--ochre)"
+              />
+            </svg>
+            <span>POLITICZ</span>
+          </a>
+          <p>For the people who live here.</p>
+          <a href="/#find"
+            >Find your starting point <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="footer-bottom">
+          <p>
+            Independent civic tools. No party endorsements. No account needed.
+          </p>
+          <div>
+            <a href="/law.html#method">Sources &amp; method</a
+            ><a href="https://github.com/theguysaccount/politicz"
+              >Open source ↗</a
+            >
+          </div>
+        </div>
+        <p class="stamp">
+          Legal and calendar directory: existing research snapshot. Check the
+          linked official sources for current rules and dates.
+        </p>
+      </div>
+    </footer>
 
-<div class="wrap">
-<footer>
-  <p class="fin">TA POLITIKÁ — the things of the people who live here.</p>
-  <p style="margin-top:.9rem">POLITICZ.ORG — an institute for what governance becomes when being heard stops being scarce. Non-partisan by construction: nothing on this site identifies a party, and the two facts it turns on — what your government must post, and whether you may speak — are the same facts whoever you vote for.</p>
-  <p style="margin-top:.6rem" class="mono stamp"></p>
-  <p style="margin-top:.6rem"><a href="/law.html#method" style="color:var(--ochre);text-decoration:none;border-bottom:1px solid currentColor">Sources &amp; method</a></p>
-</footer>
-</div>
-
-<script src="/politicz.js" defer></script>
-</body>
+    <script src="/politicz.js" defer></script>
+  </body>
 </html>
