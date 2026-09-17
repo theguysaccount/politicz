@@ -159,6 +159,14 @@
       "repeating-linear-gradient(45deg,var(--m-lo) 0 4px,var(--ground) 4px 6px)";
   }
 
+  function stateSlug(st) {
+    return String(SN[st] || st)
+      .toLowerCase()
+      .replace(/&/g, "and")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  }
+
   function noticeText(h) {
     if (h == null) return "No fixed minimum in statute";
     if (h >= 24 && h % 24 === 0 && h > 72)
@@ -205,7 +213,12 @@
         : "") +
       '<p style="margin-top:.8rem;font-size:.86rem"><a class="out" href="' +
       esc(law.u) +
-      '" target="_blank" rel="noopener" style="color:var(--ochre);text-decoration:none;border-bottom:1px solid currentColor">Read the source &#8599;</a></p>';
+      '" target="_blank" rel="noopener" style="color:var(--ochre);text-decoration:none;border-bottom:1px solid currentColor">Read the source &#8599;</a></p>' +
+      '<p style="margin-top:.7rem;font-size:.9rem"><a href="/state/' +
+      stateSlug(st) +
+      '.html" style="color:var(--ochre);text-decoration:none;border-bottom:1px solid currentColor">How to take part in ' +
+      esc(SN[st] || st) +
+      ' &#8594;</a></p>';
     var lawline =
       (SN[st] || st) +
       " — directory summary: " +
