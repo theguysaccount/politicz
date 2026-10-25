@@ -34,6 +34,7 @@ for name, page in pages.items():
         if url.scheme or url.netloc: continue
         target = (url.path.lstrip('/') or (name if not url.path else 'index.html'))
         if url.path == '/': target = 'index.html'
+        if target.endswith('/'): target += 'index.html'  # directory links like /state/
         assert (ROOT/unquote(target)).is_file(), f'{name}: missing local target {link}'
         if url.fragment and target in pages:
             assert url.fragment in pages[target].ids, f'{name}: missing anchor {link}'
