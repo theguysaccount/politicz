@@ -1,0 +1,33 @@
+# Weekly check of every meeting-calendar link (135) and statute source (51) in politicz-data.js.
+# Broken entries are flagged as warnings and written to ops/link-report.md; the site itself is
+# never touched, so the last good deploy stays live. Third-party actions are pinned to commit SHAs.
+name: Link check
+
+on:
+  schedule:
+    - cron: "41 7 * * 1" # Mondays
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write # commit ops/link-report.* when the results change
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Check every calendar and statute URL
+        run: python3 ops/link_check.py
+
+      - name: Commit the report when results changed
+        run: |
+          git add ops/link-report.json ops/link-report.md
+          if git diff --cached --quiet; then echo "Report unchanged."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Link report: results changed"
+          git push
