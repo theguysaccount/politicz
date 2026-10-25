@@ -1,0 +1,1685 @@
+{
+ "checked_at": "2026-10-25T21:19:07Z",
+ "summary": {
+  "ok": 137,
+  "unverified": 48,
+  "broken": 1,
+  "total": 186
+ },
+ "entries": [
+  {
+   "kind": "city calendar",
+   "id": "AK/Anchorage",
+   "name": "Anchorage, AK",
+   "url": "https://meetings.muni.org/agendaonline",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "AL/Huntsville",
+   "name": "Huntsville, AL",
+   "url": "https://huntsvilleal.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "AR/Little Rock",
+   "name": "Little Rock, AR",
+   "url": "https://littlerock.gov/government/board-of-directors/board-meeting-calendar/",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "AZ/Chandler",
+   "name": "Chandler, AZ",
+   "url": "https://www.chandleraz.gov/government/departments/city-clerks-office/city-council-meetings",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "AZ/Gilbert",
+   "name": "Gilbert, AZ",
+   "url": "https://www.gilbertaz.gov/how-do-i-/view/boards-commission-agendas",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "city calendar",
+   "id": "AZ/Glendale",
+   "name": "Glendale, AZ",
+   "url": "https://glendale-az.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "AZ/Mesa",
+   "name": "Mesa, AZ",
+   "url": "https://mesa.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "AZ/Phoenix",
+   "name": "Phoenix, AZ",
+   "url": "https://phoenix.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "AZ/Scottsdale",
+   "name": "Scottsdale, AZ",
+   "url": "https://publicmeetings.scottsdaleaz.gov/scottsdaleaz_publicmeetings/calendar",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "AZ/Tucson",
+   "name": "Tucson, AZ",
+   "url": "https://www.tucsonaz.gov/Government/Mayor-Council-and-City-Manager/Meeting-Schedules-Agendas",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Anaheim",
+   "name": "Anaheim, CA",
+   "url": "https://www.anaheim.net/2527/Agendas",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Bakersfield",
+   "name": "Bakersfield, CA",
+   "url": "https://pub-bakersfield.escribemeetings.com/",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Chula Vista",
+   "name": "Chula Vista, CA",
+   "url": "https://chulavista.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Fontana",
+   "name": "Fontana, CA",
+   "url": "https://fontana.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Fremont",
+   "name": "Fremont, CA",
+   "url": "https://fremontcityca.iqm2.com/Citizens/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Fresno",
+   "name": "Fresno, CA",
+   "url": "https://fresno.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Irvine",
+   "name": "Irvine, CA",
+   "url": "https://cityofirvine.gov/government/city-council/city-council-agendas",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Long Beach",
+   "name": "Long Beach, CA",
+   "url": "https://longbeach.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Los Angeles",
+   "name": "Los Angeles, CA",
+   "url": "https://lacity.primegov.com/public/portal",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Modesto",
+   "name": "Modesto, CA",
+   "url": "https://www.modestogov.com/753/City-Council-Meeting-Calendar",
+   "result": "ok",
+   "status": 200,
+   "detail": "redirects to https://www.modestogov.com/calendar.aspx?CID=22"
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Moreno Valley",
+   "name": "Moreno Valley, CA",
+   "url": "https://morenovalleyca.iqm2.com/Citizens/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Oakland",
+   "name": "Oakland, CA",
+   "url": "https://oakland.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Riverside",
+   "name": "Riverside, CA",
+   "url": "https://riversideca.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Sacramento",
+   "name": "Sacramento, CA",
+   "url": "https://sacramento.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/San Bernardino",
+   "name": "San Bernardino, CA",
+   "url": "https://sanbernardino.primegov.com/public/portal",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/San Diego",
+   "name": "San Diego, CA",
+   "url": "https://www.sandiego.gov/city-clerk/officialdocs/meetings-calendar",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/San Francisco",
+   "name": "San Francisco, CA",
+   "url": "https://sfgov.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/San Jose",
+   "name": "San Jose, CA",
+   "url": "https://sanjose.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Santa Ana",
+   "name": "Santa Ana, CA",
+   "url": "https://www.santa-ana.org/events/categories/city-council-meetings/",
+   "result": "ok",
+   "status": 200,
+   "detail": "redirects to https://santa-ana.gov/events/categories/city-council-meetings/"
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Santa Clarita",
+   "name": "Santa Clarita, CA",
+   "url": "https://santaclarita.gov/city-council/city-council-agendas/",
+   "result": "ok",
+   "status": 200,
+   "detail": "redirects to http://santaclaritacityca.iqm2.com/Citizens/default.aspx"
+  },
+  {
+   "kind": "city calendar",
+   "id": "CA/Stockton",
+   "name": "Stockton, CA",
+   "url": "https://stockton.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CO/Aurora",
+   "name": "Aurora, CO",
+   "url": "https://www.auroragov.org/city_hall/mayor___city_council/mayor___city_council_calendar",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CO/Colorado Springs",
+   "name": "Colorado Springs, CO",
+   "url": "https://coloradosprings.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "CO/Denver",
+   "name": "Denver, CO",
+   "url": "https://denver.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "DC/Washington",
+   "name": "Washington, DC",
+   "url": "https://dccouncil.gov/events/",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "FL/Cape Coral",
+   "name": "Cape Coral, FL",
+   "url": "https://capecoral.novusagenda.com/agendapublic/",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "FL/Hialeah",
+   "name": "Hialeah, FL",
+   "url": "https://www.hialeahfl.gov/AgendaCenter",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "FL/Jacksonville",
+   "name": "Jacksonville, FL",
+   "url": "https://jaxcityc.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "FL/Miami",
+   "name": "Miami, FL",
+   "url": "https://miamifl.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "FL/Orlando",
+   "name": "Orlando, FL",
+   "url": "https://orlando.novusagenda.com/agendapublic/",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "FL/Port St. Lucie",
+   "name": "Port St. Lucie, FL",
+   "url": "https://psl.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "FL/St. Petersburg",
+   "name": "St. Petersburg, FL",
+   "url": "https://www.stpete.org/government/meetings___agendas/index.php",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "FL/Tallahassee",
+   "name": "Tallahassee, FL",
+   "url": "https://go.boarddocs.com/fla/talgov/Board.nsf/Public",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "FL/Tampa",
+   "name": "Tampa, FL",
+   "url": "https://www.tampa.gov/calendar-group/city-council-meetings",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "GA/Atlanta",
+   "name": "Atlanta, GA",
+   "url": "https://atlantaga.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "GA/Columbus",
+   "name": "Columbus, GA",
+   "url": "https://publicagenda.apps.columbusga.gov/",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "HI/Honolulu",
+   "name": "Honolulu, HI",
+   "url": "https://www.honolulucitycouncil.org/calendar",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "IA/Des Moines",
+   "name": "Des Moines, IA",
+   "url": "https://www.dsm.city/government/city_council/meetings/meeting_schedule.php",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "ID/Boise",
+   "name": "Boise, ID",
+   "url": "https://boisecityid.iqm2.com/Citizens/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "IL/Chicago",
+   "name": "Chicago, IL",
+   "url": "https://chicityclerkelms.chicago.gov/Meetings/",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "IN/Fort Wayne",
+   "name": "Fort Wayne, IN",
+   "url": "https://fortwaynein.portal.civicclerk.com/",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "IN/Indianapolis",
+   "name": "Indianapolis, IN",
+   "url": "https://www.indy.gov/activity/council-meeting-calendar",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "KS/Overland Park",
+   "name": "Overland Park, KS",
+   "url": "https://opkansas.civicweb.net/Portal/MeetingSchedule.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "KS/Wichita",
+   "name": "Wichita, KS",
+   "url": "https://www.wichita.gov/AgendaCenter",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "city calendar",
+   "id": "KY/Lexington",
+   "name": "Lexington, KY",
+   "url": "https://lexington.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "KY/Louisville",
+   "name": "Louisville, KY",
+   "url": "https://louisville.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "LA/Baton Rouge",
+   "name": "Baton Rouge, LA",
+   "url": "https://www.brla.gov/calendar.aspx?CID=14",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "LA/New Orleans",
+   "name": "New Orleans, LA",
+   "url": "https://cityofno.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "MA/Boston",
+   "name": "Boston, MA",
+   "url": "https://boston.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "MA/Worcester",
+   "name": "Worcester, MA",
+   "url": "https://worcesterma.primegov.com/public/portal",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "MD/Baltimore",
+   "name": "Baltimore, MD",
+   "url": "https://baltimore.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "MI/Detroit",
+   "name": "Detroit, MI",
+   "url": "https://detroit.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "MN/Minneapolis",
+   "name": "Minneapolis, MN",
+   "url": "https://minneapolismn.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "MN/St. Paul",
+   "name": "St. Paul, MN",
+   "url": "https://stpaul.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "MO/Kansas City",
+   "name": "Kansas City, MO",
+   "url": "https://kansascity.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "MO/St. Louis",
+   "name": "St. Louis, MO",
+   "url": "https://stlouismo.portal.civicclerk.com/",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "NC/Charlotte",
+   "name": "Charlotte, NC",
+   "url": "https://charlottenc.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "NC/Durham",
+   "name": "Durham, NC",
+   "url": "https://www.durhamnc.gov/calendar.aspx?CID=29",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "city calendar",
+   "id": "NC/Fayetteville",
+   "name": "Fayetteville, NC",
+   "url": "https://cityoffayetteville.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "NC/Greensboro",
+   "name": "Greensboro, NC",
+   "url": "https://greensboro.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "NC/Raleigh",
+   "name": "Raleigh, NC",
+   "url": "https://raleighnc.gov/government/services/city-council-meetings",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "city calendar",
+   "id": "NC/Winston-Salem",
+   "name": "Winston-Salem, NC",
+   "url": "https://winston-salem.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "NE/Lincoln",
+   "name": "Lincoln, NE",
+   "url": "https://www.lincoln.ne.gov/City/City-Council/Minutes-Agendas",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "city calendar",
+   "id": "NE/Omaha",
+   "name": "Omaha, NE",
+   "url": "https://citycouncil.cityofomaha.org/view-council-meetings",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "city calendar",
+   "id": "NJ/Jersey City",
+   "name": "Jersey City, NJ",
+   "url": "https://cityofjerseycity.civicweb.net/Portal/MeetingSchedule.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "NJ/Newark",
+   "name": "Newark, NJ",
+   "url": "https://newark.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "NM/Albuquerque",
+   "name": "Albuquerque, NM",
+   "url": "https://cabq.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "NV/Henderson",
+   "name": "Henderson, NV",
+   "url": "https://www.cityofhenderson.com/government/public-meeting-agendas",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "city calendar",
+   "id": "NV/Las Vegas",
+   "name": "Las Vegas, NV",
+   "url": "https://lasvegas.primegov.com/public/portal",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "NV/North Las Vegas",
+   "name": "North Las Vegas, NV",
+   "url": "https://cityofnorthlasvegas.primegov.com/public/portal",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "NV/Reno",
+   "name": "Reno, NV",
+   "url": "https://reno.primegov.com/public/portal",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "NY/Buffalo",
+   "name": "Buffalo, NY",
+   "url": "https://buffalony.iqm2.com/Citizens/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "NY/New York",
+   "name": "New York, NY",
+   "url": "https://nyc.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "NY/Rochester",
+   "name": "Rochester, NY",
+   "url": "https://cityofrochester.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "NY/Yonkers",
+   "name": "Yonkers, NY",
+   "url": "https://yonkersny.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "OH/Cincinnati",
+   "name": "Cincinnati, OH",
+   "url": "https://cincinnatioh.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "OH/Cleveland",
+   "name": "Cleveland, OH",
+   "url": "https://cityofcleveland.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "OH/Columbus",
+   "name": "Columbus, OH",
+   "url": "https://columbus.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "OH/Toledo",
+   "name": "Toledo, OH",
+   "url": "https://toledo.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "OK/Oklahoma City",
+   "name": "Oklahoma City, OK",
+   "url": "https://www.okc.gov/Government/Public-Meetings-and-Agendas/Public-Meeting-Calendar",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "city calendar",
+   "id": "OK/Tulsa",
+   "name": "Tulsa, OK",
+   "url": "https://cityoftulsa.org/our-city/meeting-agendas.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "OR/Portland",
+   "name": "Portland, OR",
+   "url": "https://www.portland.gov/auditor/council-clerk/meetings",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "PA/Philadelphia",
+   "name": "Philadelphia, PA",
+   "url": "https://phila.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "PA/Pittsburgh",
+   "name": "Pittsburgh, PA",
+   "url": "https://pittsburgh.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "SD/Sioux Falls",
+   "name": "Sioux Falls, SD",
+   "url": "https://www.siouxfalls.gov/government/council/council-meetings-agendas",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "city calendar",
+   "id": "TN/Knoxville",
+   "name": "Knoxville, TN",
+   "url": "https://knoxvilletn.primegov.com/public/portal",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "TN/Memphis",
+   "name": "Memphis, TN",
+   "url": "https://memphistn.gov/city-council-meeting-agenda/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "city calendar",
+   "id": "TN/Nashville",
+   "name": "Nashville, TN",
+   "url": "https://nashville.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/Amarillo",
+   "name": "Amarillo, TX",
+   "url": "https://amarillotx.portal.civicclerk.com/",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/Arlington",
+   "name": "Arlington, TX",
+   "url": "https://www.arlingtontx.gov/Government/Meetings-Agendas/City-Council-Meeting-Schedule/City-Council-Calendar",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/Austin",
+   "name": "Austin, TX",
+   "url": "https://austintexas.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/Corpus Christi",
+   "name": "Corpus Christi, TX",
+   "url": "https://corpuschristi.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/Dallas",
+   "name": "Dallas, TX",
+   "url": "https://cityofdallas.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/El Paso",
+   "name": "El Paso, TX",
+   "url": "https://elpasotexas.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/Fort Worth",
+   "name": "Fort Worth, TX",
+   "url": "https://fortworthgov.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/Frisco",
+   "name": "Frisco, TX",
+   "url": "https://agenda.friscotexas.gov/OnBaseAgendaOnline/",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/Garland",
+   "name": "Garland, TX",
+   "url": "https://garlandtx.portal.civicclerk.com/",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/Grand Prairie",
+   "name": "Grand Prairie, TX",
+   "url": "https://grandprairie.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/Houston",
+   "name": "Houston, TX",
+   "url": "https://houstontx.primegov.com/public/portal",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/Irving",
+   "name": "Irving, TX",
+   "url": "https://irvingtx.gov/index.php?section=public-meetings-calendar",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/Laredo",
+   "name": "Laredo, TX",
+   "url": "https://cityoflaredo.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/Lubbock",
+   "name": "Lubbock, TX",
+   "url": "https://www.mylubbock.us/AgendaCenter/City-Council-52/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/McKinney",
+   "name": "McKinney, TX",
+   "url": "https://mckinney.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/Plano",
+   "name": "Plano, TX",
+   "url": "https://plano.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "TX/San Antonio",
+   "name": "San Antonio, TX",
+   "url": "https://sanantonio.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "UT/Salt Lake City",
+   "name": "Salt Lake City, UT",
+   "url": "https://slc.primegov.com/public/portal",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "VA/Chesapeake",
+   "name": "Chesapeake, VA",
+   "url": "https://www.cityofchesapeake.net/AgendaCenter",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "VA/Norfolk",
+   "name": "Norfolk, VA",
+   "url": "https://norfolkcityva.iqm2.com/Citizens/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "VA/Richmond",
+   "name": "Richmond, VA",
+   "url": "https://richmondva.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "VA/Virginia Beach",
+   "name": "Virginia Beach, VA",
+   "url": "https://virginiabeachva.iqm2.com/Citizens/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "WA/Seattle",
+   "name": "Seattle, WA",
+   "url": "https://seattle.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "WA/Spokane",
+   "name": "Spokane, WA",
+   "url": "https://my.spokanecity.org/citycouncil/meetings/",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "WA/Tacoma",
+   "name": "Tacoma, WA",
+   "url": "https://cityoftacoma.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "WI/Madison",
+   "name": "Madison, WI",
+   "url": "https://madison.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "city calendar",
+   "id": "WI/Milwaukee",
+   "name": "Milwaukee, WI",
+   "url": "https://milwaukee.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "county calendar",
+   "id": "CA/Los Angeles County",
+   "name": "Los Angeles County, CA",
+   "url": "https://lacounty.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "county calendar",
+   "id": "CA/Riverside County",
+   "name": "Riverside County, CA",
+   "url": "https://riversidecountyca.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "county calendar",
+   "id": "CA/San Bernardino County",
+   "name": "San Bernardino County, CA",
+   "url": "https://sanbernardino.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "county calendar",
+   "id": "FL/Broward County",
+   "name": "Broward County, FL",
+   "url": "https://broward.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "county calendar",
+   "id": "FL/Hillsborough County",
+   "name": "Hillsborough County, FL",
+   "url": "https://hillsboroughcounty.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "county calendar",
+   "id": "FL/Miami-Dade County",
+   "name": "Miami-Dade County, FL",
+   "url": "https://miamidade.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "county calendar",
+   "id": "IL/Cook County",
+   "name": "Cook County, IL",
+   "url": "https://cook-county.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "county calendar",
+   "id": "MD/Montgomery County",
+   "name": "Montgomery County, MD",
+   "url": "https://montgomerycountymd.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "county calendar",
+   "id": "MD/Prince George's County",
+   "name": "Prince George's County, MD",
+   "url": "https://princegeorgescountymd.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "county calendar",
+   "id": "WA/King County",
+   "name": "King County, WA",
+   "url": "https://kingcounty.legistar.com/Calendar.aspx",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "AK",
+   "name": "Alaska: Alaska Open Meetings Act",
+   "url": "https://law.justia.com/codes/alaska/title-44/chapter-62/article-6/section-44-62-310/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "AL",
+   "name": "Alabama: Alabama Open Meetings Act",
+   "url": "https://almonline.org/Assets/Files/LegalServices/OpenMeetingsLaw/Open-Meetings-Act-Online-Reference-Guide-June-2024.pdf",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "AR",
+   "name": "Arkansas: Arkansas Freedom of Information Act",
+   "url": "https://law.justia.com/codes/arkansas/2020/title-25/chapter-19/section-25-19-106",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "AZ",
+   "name": "Arizona: Arizona Open Meeting Law",
+   "url": "https://law.justia.com/codes/arizona/title-38/section-38-431-02/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "CA",
+   "name": "California: Ralph M. Brown Act",
+   "url": "https://codes.findlaw.com/ca/government-code/gov-sect-54954-2/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "CO",
+   "name": "Colorado: Colorado Open Meetings Law",
+   "url": "https://law.justia.com/codes/colorado/title-24/article-6/part-4/section-24-6-402/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "CT",
+   "name": "Connecticut: Connecticut Freedom of Information Act",
+   "url": "https://law.justia.com/codes/connecticut/title-1/chapter-14/section-1-225/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "DC",
+   "name": "District of Columbia: District of Columbia Open Meetings Act",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/2-576",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "DE",
+   "name": "Delaware: Delaware Freedom of Information Act",
+   "url": "https://law.justia.com/codes/delaware/title-29/chapter-100/section-10004/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "FL",
+   "name": "Florida: Florida Sunshine Law",
+   "url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0200-0299/0286/Sections/0286.011.html",
+   "result": "ok",
+   "status": 200,
+   "detail": "redirects to https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0200-0299/0286/Sections/0286.011.html"
+  },
+  {
+   "kind": "statute",
+   "id": "GA",
+   "name": "Georgia: Georgia Open Meetings Act",
+   "url": "https://law.justia.com/codes/georgia/2022/title-50/chapter-14/section-50-14-1/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "HI",
+   "name": "Hawaii: Hawaii Sunshine Law",
+   "url": "https://law.justia.com/codes/hawaii/title-8/chapter-92/section-92-7",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "IA",
+   "name": "Iowa: Iowa Open Meetings Law",
+   "url": "https://www.legis.iowa.gov/docs/code/21.4.pdf",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "ID",
+   "name": "Idaho: Idaho Open Meeting Law",
+   "url": "https://law.justia.com/codes/idaho/title-74/chapter-2/section-74-204/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "IL",
+   "name": "Illinois: Illinois Open Meetings Act",
+   "url": "https://www.ilga.gov/Legislation/ILCS/Articles?ActID=84&ChapterID=2",
+   "result": "broken",
+   "status": 0,
+   "detail": "SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)"
+  },
+  {
+   "kind": "statute",
+   "id": "IN",
+   "name": "Indiana: Indiana Open Door Law",
+   "url": "https://codes.findlaw.com/in/title-5-state-and-local-administration/in-code-sect-5-14-1-5-5/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "KS",
+   "name": "Kansas: Kansas Open Meetings Act",
+   "url": "https://law.justia.com/codes/kansas/chapter-75/article-43/section-75-4318/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "KY",
+   "name": "Kentucky: Kentucky Open Meetings Act",
+   "url": "https://www.ag.ky.gov/Press%20Release%20Attachments/2025%20Open%20Records%20Open%20Meetings%20Guide.pdf",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "LA",
+   "name": "Louisiana: Louisiana Open Meetings Law",
+   "url": "https://law.justia.com/codes/louisiana/revised-statutes/title-42/rs-42-19/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "MA",
+   "name": "Massachusetts: Massachusetts Open Meeting Law",
+   "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIII/Chapter30A/Section20",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "MD",
+   "name": "Maryland: Maryland Open Meetings Act",
+   "url": "https://oag.maryland.gov/resources-info/Documents/pdfs/OMA%20Manual/omaManualPrint.pdf",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "ME",
+   "name": "Maine: Maine Freedom of Access Act",
+   "url": "https://law.justia.com/codes/maine/title-1/chapter-13/subchapter-1/section-406/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "MI",
+   "name": "Michigan: Michigan Open Meetings Act",
+   "url": "https://law.justia.com/codes/michigan/chapter-15/act-267-of-1976/section-15-265/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "MN",
+   "name": "Minnesota: Minnesota Open Meeting Law",
+   "url": "https://www.revisor.mn.gov/statutes/cite/13D.04",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "MO",
+   "name": "Missouri: Missouri Sunshine Law",
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=610.020",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "MS",
+   "name": "Mississippi: Mississippi Open Meetings Act",
+   "url": "https://law.justia.com/codes/mississippi/title-25/chapter-41/section-25-41-13/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "MT",
+   "name": "Montana: Montana Open Meeting Law",
+   "url": "https://law.justia.com/codes/montana/title-2/chapter-3/part-1/section-2-3-103/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "NC",
+   "name": "North Carolina: North Carolina Open Meetings Law",
+   "url": "https://law.justia.com/codes/north-carolina/chapter-143/article-33c/section-143-318-12/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "ND",
+   "name": "North Dakota: North Dakota Open Meetings Law",
+   "url": "https://attorneygeneral.nd.gov/wp-content/uploads/2024/04/Open-Meetings-Manual.pdf",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "NE",
+   "name": "Nebraska: Nebraska Open Meetings Act",
+   "url": "https://law.justia.com/codes/nebraska/chapter-84/statute-84-1411/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "NH",
+   "name": "New Hampshire: New Hampshire Right-to-Know Law",
+   "url": "https://law.justia.com/codes/new-hampshire/title-vi/chapter-91-a/section-91-a-2/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "NJ",
+   "name": "New Jersey: Open Public Meetings Act",
+   "url": "https://law.justia.com/codes/new-jersey/title-10/section-10-4-8/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "NM",
+   "name": "New Mexico: New Mexico Open Meetings Act",
+   "url": "https://law.justia.com/codes/new-mexico/chapter-10/article-15/section-10-15-1/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "NV",
+   "name": "Nevada: Nevada Open Meeting Law",
+   "url": "https://www.leg.state.nv.us/NRS/NRS-241.html",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "NY",
+   "name": "New York: New York Open Meetings Law",
+   "url": "https://www.nysenate.gov/legislation/laws/PBO/104",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "OH",
+   "name": "Ohio: Ohio Open Meetings Act",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-121.22",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "OK",
+   "name": "Oklahoma: Oklahoma Open Meeting Act",
+   "url": "https://law.justia.com/codes/oklahoma/title-25/section-25-311/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "OR",
+   "name": "Oregon: Oregon Public Meetings Law",
+   "url": "https://oregon.public.law/statutes/ors_192.640",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "PA",
+   "name": "Pennsylvania: Pennsylvania Sunshine Act",
+   "url": "https://law.justia.com/codes/pennsylvania/title-65/chapter-7/section-709/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "RI",
+   "name": "Rhode Island: Rhode Island Open Meetings Act",
+   "url": "https://law.justia.com/codes/rhode-island/title-42/chapter-42-46/section-42-46-6/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "SC",
+   "name": "South Carolina: South Carolina Freedom of Information Act",
+   "url": "https://law.justia.com/codes/south-carolina/title-30/chapter-4/section-30-4-80/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "SD",
+   "name": "South Dakota: South Dakota Open Meetings Law",
+   "url": "https://law.justia.com/codes/south-dakota/title-1/chapter-25/section-1-25-1-1/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "TN",
+   "name": "Tennessee: Tennessee Open Meetings Act",
+   "url": "https://law.justia.com/codes/tennessee/title-8/chapter-44/part-1/section-8-44-103/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "TX",
+   "name": "Texas: Texas Open Meetings Act",
+   "url": "https://statutes.capitol.texas.gov/Docs/GV/htm/GV.551.htm",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "UT",
+   "name": "Utah: Utah Open and Public Meetings Act",
+   "url": "https://codes.findlaw.com/ut/title-52-public-officers/ut-code-sect-52-4-202/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "VA",
+   "name": "Virginia: Virginia Freedom of Information Act",
+   "url": "https://law.justia.com/codes/virginia/title-2-2/chapter-37/section-2-2-3707/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "VT",
+   "name": "Vermont: Vermont Open Meeting Law",
+   "url": "https://legislature.vermont.gov/statutes/section/01/005/00312",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "WA",
+   "name": "Washington: Open Public Meetings Act",
+   "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=42.30.077",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "WI",
+   "name": "Wisconsin: Wisconsin Open Meetings Law",
+   "url": "https://docs.legis.wisconsin.gov/statutes/statutes/19/v/84",
+   "result": "ok",
+   "status": 200,
+   "detail": ""
+  },
+  {
+   "kind": "statute",
+   "id": "WV",
+   "name": "West Virginia: West Virginia Open Governmental Proceedings Act",
+   "url": "https://law.justia.com/codes/west-virginia/chapter-6/article-9a/section-6-9a-3/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  },
+  {
+   "kind": "statute",
+   "id": "WY",
+   "name": "Wyoming: Wyoming Public Meetings Act",
+   "url": "https://law.justia.com/codes/wyoming/title-16/chapter-4/article-4/section-16-4-404/",
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
+  }
+ ]
+}
