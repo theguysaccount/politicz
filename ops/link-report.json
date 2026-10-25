@@ -1,9 +1,9 @@
 {
- "checked_at": "2026-10-25T21:19:07Z",
+ "checked_at": "2026-10-25T21:29:28Z",
  "summary": {
   "ok": 137,
-  "unverified": 48,
-  "broken": 1,
+  "unverified": 49,
+  "broken": 0,
   "total": 186
  },
  "entries": [
@@ -876,9 +876,9 @@
    "id": "TN/Memphis",
    "name": "Memphis, TN",
    "url": "https://memphistn.gov/city-council-meeting-agenda/",
-   "result": "unverified",
-   "status": 403,
-   "detail": "HTTP 403"
+   "result": "ok",
+   "status": 200,
+   "detail": ""
   },
   {
    "kind": "city calendar",
@@ -1353,9 +1353,9 @@
    "id": "IL",
    "name": "Illinois: Illinois Open Meetings Act",
    "url": "https://www.ilga.gov/Legislation/ILCS/Articles?ActID=84&ChapterID=2",
-   "result": "broken",
-   "status": 0,
-   "detail": "SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)"
+   "result": "unverified",
+   "status": 200,
+   "detail": "certificate chain did not verify; the page answers when checked without verification"
   },
   {
    "kind": "statute",
@@ -1659,9 +1659,9 @@
    "id": "WI",
    "name": "Wisconsin: Wisconsin Open Meetings Law",
    "url": "https://docs.legis.wisconsin.gov/statutes/statutes/19/v/84",
-   "result": "ok",
-   "status": 200,
-   "detail": ""
+   "result": "unverified",
+   "status": 0,
+   "detail": "TimeoutError: timed out"
   },
   {
    "kind": "statute",
