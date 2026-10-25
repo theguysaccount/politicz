@@ -7,8 +7,9 @@
 Each URL is fetched like a browser would (GET, redirects followed, two tries) and classed:
 
   ok           answered 2xx after redirects
-  unverified   the server answered but refused an automated check (401, 403, 429, 503...)
-               or timed out; usually bot protection, so it is reported, not counted as broken
+  unverified   the server answered but refused an automated check (401, 403, 429, 503...),
+               timed out, or sent an incomplete certificate chain that browsers repair;
+               reported, not counted as broken
   broken       404/410 and other hard errors, 5xx after retries, DNS or TLS failures
 
 Broken entries are flagged as warnings in the Actions log and listed in ops/link-report.md.
@@ -72,6 +73,13 @@ def check(entry: dict) -> dict:
         return dict(entry, result="broken", status=0, detail="missing or malformed URL")
     status, final, _, _, err = fetch(url, ua=BROWSER_UA, timeout=25, tries=2, limit=200_000)
     result = classify(status, err)
+    if result == "broken" and "unable to get local issuer certificate" in err:
+        # A server that omits an intermediate certificate: browsers fetch it, Python doesn't.
+        # Expired, self-signed and wrong-host certificates stay broken; browsers balk at those too.
+        status2, final2, _, _, err2 = fetch(url, ua=BROWSER_UA, timeout=25, tries=1, limit=200_000, verify=False)
+        if 200 <= status2 < 300:
+            return dict(entry, result="unverified", status=status2,
+                        detail="certificate chain did not verify; the page answers when checked without verification")
     moved = final if final.rstrip("/") != url.rstrip("/") else ""
     return dict(entry, result=result, status=status, detail=err or (f"redirects to {moved}" if moved else ""))
 

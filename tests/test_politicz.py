@@ -95,6 +95,17 @@ class LinkCheck(unittest.TestCase):
         self.assertEqual(link_check.classify(404, "HTTP 404"), "broken")
         self.assertEqual(link_check.classify(0, "gaierror: Name or service not known"), "broken")
 
+    def test_incomplete_chain_is_unverified_but_expired_is_broken(self):
+        from unittest import mock
+        entry = {"kind": "statute", "id": "IL", "name": "IL", "url": "https://example.gov/act"}
+        chain = "SSLCertVerificationError: certificate verify failed: unable to get local issuer certificate"
+        answers = [(0, entry["url"], {}, b"", chain), (200, entry["url"], {}, b"ok", "")]
+        with mock.patch.object(link_check, "fetch", side_effect=answers):
+            self.assertEqual(link_check.check(entry)["result"], "unverified")
+        expired = "SSLCertVerificationError: certificate verify failed: certificate has expired"
+        with mock.patch.object(link_check, "fetch", return_value=(0, entry["url"], {}, b"", expired)):
+            self.assertEqual(link_check.check(entry)["result"], "broken")
+
     def test_report_only_changes_with_results(self):
         a = {"entries": [{"kind": "statute", "id": "AL", "url": "u", "result": "ok", "status": 200}]}
         b = {"entries": [{"kind": "statute", "id": "AL", "url": "u", "result": "ok", "status": 204}], "checked_at": "x"}

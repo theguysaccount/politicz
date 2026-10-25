@@ -21,14 +21,20 @@ BROWSER_UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.3
 
 
 def fetch(url: str, *, follow: bool = True, timeout: int = 25, tries: int = 2, ua: str = UA,
-          limit: int = 5_000_000) -> tuple[int, str, dict, bytes, str]:
-    """GET a URL. Returns (status, final_url, headers, body, error); status 0 means no answer."""
+          limit: int = 5_000_000, verify: bool = True) -> tuple[int, str, dict, bytes, str]:
+    """GET a URL. Returns (status, final_url, headers, body, error); status 0 means no answer.
+
+    verify=False skips certificate checks; only use it to classify a link, never to trust content.
+    """
 
     class NoRedirect(urllib.request.HTTPRedirectHandler):
         def redirect_request(self, *a, **k):
             return None
 
-    opener = urllib.request.build_opener() if follow else urllib.request.build_opener(NoRedirect)
+    handlers = [] if follow else [NoRedirect]
+    if not verify:
+        handlers.append(urllib.request.HTTPSHandler(context=ssl._create_unverified_context()))
+    opener = urllib.request.build_opener(*handlers)
     headers = {"User-Agent": ua, "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
                "Accept-Language": "en-US,en;q=0.8"}
     result = (0, url, {}, b"", "no attempt")
