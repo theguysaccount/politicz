@@ -73,4 +73,8 @@ available, run this monthly in a clone of this repo:
 > `python3 scripts/build.py` and `python3 -m unittest discover -s tests`, and merge only when Checks is green.
 
 The next content step in the venture plan is indexable city pages ("[city] council meeting calendar"),
-generated from `politicz-data.js` and added to the sitemap index.
+generated from `politicz-data.js` and added to the sitemap index. They were deliberately not generated yet: today
+each city has only a name, a population and one calendar link, so 135 pages would differ by a single link and
+read as thin, near-duplicate pages. Generate them once each city also carries its meeting cadence, how to sign
+up to speak and the speaking time limit (the routine above can research these), and link each one from its
+state page.
