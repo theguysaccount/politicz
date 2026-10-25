@@ -1,0 +1,55 @@
+# Daily live health check of politicz.org, plus the keepalive that stops GitHub from
+# disabling this repo's scheduled workflows after 60 days without a commit.
+# Third-party actions are pinned to commit SHAs.
+name: Health
+
+on:
+  schedule:
+    - cron: "23 5 * * *" # daily, off the top of the hour
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # Pages, every sitemap URL, robots.txt, IndexNow key, TLS certificate life, HTTPS redirect,
+      # and the Census and 5 Calls APIs the address lookup depends on. Fails loudly; changes nothing.
+      - name: Check the live site
+        run: python3 ops/health.py
+
+  keepalive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write # the heartbeat commit
+      actions: write # re-enable workflows GitHub disabled for inactivity
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Heartbeat commit after 30 quiet days
+        run: |
+          age=$(( ( $(date +%s) - $(git log -1 --format=%ct) ) / 86400 ))
+          echo "Last commit was $age day(s) ago."
+          if [ "$age" -ge 30 ]; then
+            date -u +%Y-%m-%dT%H:%M:%SZ > .github/keepalive
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add .github/keepalive
+            git commit -m "Keepalive: heartbeat after $age quiet days"
+            git push
+          fi
+
+      - name: Re-enable workflows disabled for inactivity
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/actions/workflows" --jq '.workflows[] | select(.state == "disabled_inactivity") | .id' |
+            while read -r id; do gh api -X PUT "repos/$GITHUB_REPOSITORY/actions/workflows/$id/enable" && echo "Re-enabled workflow $id"; done

@@ -1,0 +1,54 @@
+# Validates the site on every push and pull request. After a push to main it waits for the
+# GitHub Pages branch build of that commit, checks the live site and pings IndexNow.
+# Pages deploys straight from main, so merge only pull requests whose checks passed.
+# Third-party actions are pinned to commit SHAs.
+name: Checks
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "ops/link-report.*"
+      - ".github/keepalive"
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Validate pages (landmarks, links, anchors, JavaScript syntax, CNAME)
+        run: python3 scripts/build.py
+
+      - name: Tests (sitemaps, state pages, plumbing, link-check parser)
+        run: python3 -m unittest discover -s tests -v
+
+  live:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: read
+      pages: read # read the Pages build status for this commit
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Wait for the Pages build, then check the live site
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 ops/health.py --wait-build "$GITHUB_SHA"
+
+      # Only after the live check passed. Never fails the run.
+      - name: Ping IndexNow
+        run: python3 ops/indexnow.py --key-file 0dec9501cbc566f8a7475aedcedaaac9.txt --base https://politicz.org/ --sitemap https://politicz.org/sitemap-index.xml

@@ -1,0 +1,7 @@
+# GitHub Pages builds this repo with Jekyll (branch deploy from main). Keep these repo-only
+# files off politicz.org; everything else is served exactly as committed.
+exclude:
+  - README.md
+  - OPERATIONS.md
+  - ops/
+  - tests/
