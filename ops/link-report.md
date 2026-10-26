@@ -1,6 +1,6 @@
 # Link report
 
-Checked 2026-10-25T21:29:28Z: 186 URLs from `politicz-data.js`. 137 ok, 49 unverified (the server refused an automated check), 0 broken.
+Checked 2026-10-26T14:35:35Z: 186 URLs from `politicz-data.js`. 136 ok, 50 unverified (the server refused an automated check), 0 broken.
 
 Written by `ops/link_check.py` (weekly workflow `link-check.yml`). Fix a broken entry in `politicz-data.js`; the state pages under `state/` carry the same URLs.
 
@@ -8,13 +8,14 @@ Written by `ops/link_check.py` (weekly workflow `link-check.yml`). Fix a broken 
 
 None.
 
-## Unverified (49)
+## Unverified (50)
 
 | Kind | Entry | URL | Answer |
 |---|---|---|---|
 | city calendar | Gilbert, AZ | https://www.gilbertaz.gov/how-do-i-/view/boards-commission-agendas | HTTP 403 HTTP 403 |
 | city calendar | Tucson, AZ | https://www.tucsonaz.gov/Government/Mayor-Council-and-City-Manager/Meeting-Schedules-Agendas | HTTP 403 HTTP 403 |
 | city calendar | Anaheim, CA | https://www.anaheim.net/2527/Agendas | HTTP 403 HTTP 403 |
+| city calendar | Boise, ID | https://boisecityid.iqm2.com/Citizens/Calendar.aspx | TimeoutError: The read operation timed out |
 | city calendar | Wichita, KS | https://www.wichita.gov/AgendaCenter | HTTP 403 HTTP 403 |
 | city calendar | Durham, NC | https://www.durhamnc.gov/calendar.aspx?CID=29 | HTTP 403 HTTP 403 |
 | city calendar | Raleigh, NC | https://raleighnc.gov/government/services/city-council-meetings | HTTP 403 HTTP 403 |
@@ -23,6 +24,7 @@ None.
 | city calendar | Henderson, NV | https://www.cityofhenderson.com/government/public-meeting-agendas | HTTP 403 HTTP 403 |
 | city calendar | Oklahoma City, OK | https://www.okc.gov/Government/Public-Meetings-and-Agendas/Public-Meeting-Calendar | HTTP 403 HTTP 403 |
 | city calendar | Sioux Falls, SD | https://www.siouxfalls.gov/government/council/council-meetings-agendas | HTTP 403 HTTP 403 |
+| city calendar | Memphis, TN | https://memphistn.gov/city-council-meeting-agenda/ | HTTP 403 HTTP 403 |
 | city calendar | Arlington, TX | https://www.arlingtontx.gov/Government/Meetings-Agendas/City-Council-Meeting-Schedule/City-Council-Calendar | HTTP 403 HTTP 403 |
 | city calendar | Irving, TX | https://irvingtx.gov/index.php?section=public-meetings-calendar | HTTP 403 HTTP 403 |
 | city calendar | Lubbock, TX | https://www.mylubbock.us/AgendaCenter/City-Council-52/ | HTTP 403 HTTP 403 |
@@ -58,6 +60,5 @@ None.
 | statute | Tennessee: Tennessee Open Meetings Act | https://law.justia.com/codes/tennessee/title-8/chapter-44/part-1/section-8-44-103/ | HTTP 403 HTTP 403 |
 | statute | Utah: Utah Open and Public Meetings Act | https://codes.findlaw.com/ut/title-52-public-officers/ut-code-sect-52-4-202/ | HTTP 403 HTTP 403 |
 | statute | Virginia: Virginia Freedom of Information Act | https://law.justia.com/codes/virginia/title-2-2/chapter-37/section-2-2-3707/ | HTTP 403 HTTP 403 |
-| statute | Wisconsin: Wisconsin Open Meetings Law | https://docs.legis.wisconsin.gov/statutes/statutes/19/v/84 | TimeoutError: timed out |
 | statute | West Virginia: West Virginia Open Governmental Proceedings Act | https://law.justia.com/codes/west-virginia/chapter-6/article-9a/section-6-9a-3/ | HTTP 403 HTTP 403 |
 | statute | Wyoming: Wyoming Public Meetings Act | https://law.justia.com/codes/wyoming/title-16/chapter-4/article-4/section-16-4-404/ | HTTP 403 HTTP 403 |

@@ -1,8 +1,8 @@
 {
- "checked_at": "2026-10-25T21:29:28Z",
+ "checked_at": "2026-10-26T14:35:35Z",
  "summary": {
-  "ok": 137,
-  "unverified": 49,
+  "ok": 136,
+  "unverified": 50,
   "broken": 0,
   "total": 186
  },
@@ -444,9 +444,9 @@
    "id": "ID/Boise",
    "name": "Boise, ID",
    "url": "https://boisecityid.iqm2.com/Citizens/Calendar.aspx",
-   "result": "ok",
-   "status": 200,
-   "detail": ""
+   "result": "unverified",
+   "status": 0,
+   "detail": "TimeoutError: The read operation timed out"
   },
   {
    "kind": "city calendar",
@@ -876,9 +876,9 @@
    "id": "TN/Memphis",
    "name": "Memphis, TN",
    "url": "https://memphistn.gov/city-council-meeting-agenda/",
-   "result": "ok",
-   "status": 200,
-   "detail": ""
+   "result": "unverified",
+   "status": 403,
+   "detail": "HTTP 403"
   },
   {
    "kind": "city calendar",
@@ -1659,9 +1659,9 @@
    "id": "WI",
    "name": "Wisconsin: Wisconsin Open Meetings Law",
    "url": "https://docs.legis.wisconsin.gov/statutes/statutes/19/v/84",
-   "result": "unverified",
-   "status": 0,
-   "detail": "TimeoutError: timed out"
+   "result": "ok",
+   "status": 200,
+   "detail": ""
   },
   {
    "kind": "statute",
