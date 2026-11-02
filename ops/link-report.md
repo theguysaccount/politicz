@@ -1,6 +1,6 @@
 # Link report
 
-Checked 2026-10-26T14:35:35Z: 186 URLs from `politicz-data.js`. 136 ok, 50 unverified (the server refused an automated check), 0 broken.
+Checked 2026-11-02T17:26:56Z: 186 URLs from `politicz-data.js`. 138 ok, 48 unverified (the server refused an automated check), 0 broken.
 
 Written by `ops/link_check.py` (weekly workflow `link-check.yml`). Fix a broken entry in `politicz-data.js`; the state pages under `state/` carry the same URLs.
 
@@ -8,14 +8,13 @@ Written by `ops/link_check.py` (weekly workflow `link-check.yml`). Fix a broken 
 
 None.
 
-## Unverified (50)
+## Unverified (48)
 
 | Kind | Entry | URL | Answer |
 |---|---|---|---|
 | city calendar | Gilbert, AZ | https://www.gilbertaz.gov/how-do-i-/view/boards-commission-agendas | HTTP 403 HTTP 403 |
 | city calendar | Tucson, AZ | https://www.tucsonaz.gov/Government/Mayor-Council-and-City-Manager/Meeting-Schedules-Agendas | HTTP 403 HTTP 403 |
 | city calendar | Anaheim, CA | https://www.anaheim.net/2527/Agendas | HTTP 403 HTTP 403 |
-| city calendar | Boise, ID | https://boisecityid.iqm2.com/Citizens/Calendar.aspx | TimeoutError: The read operation timed out |
 | city calendar | Wichita, KS | https://www.wichita.gov/AgendaCenter | HTTP 403 HTTP 403 |
 | city calendar | Durham, NC | https://www.durhamnc.gov/calendar.aspx?CID=29 | HTTP 403 HTTP 403 |
 | city calendar | Raleigh, NC | https://raleighnc.gov/government/services/city-council-meetings | HTTP 403 HTTP 403 |
@@ -24,7 +23,6 @@ None.
 | city calendar | Henderson, NV | https://www.cityofhenderson.com/government/public-meeting-agendas | HTTP 403 HTTP 403 |
 | city calendar | Oklahoma City, OK | https://www.okc.gov/Government/Public-Meetings-and-Agendas/Public-Meeting-Calendar | HTTP 403 HTTP 403 |
 | city calendar | Sioux Falls, SD | https://www.siouxfalls.gov/government/council/council-meetings-agendas | HTTP 403 HTTP 403 |
-| city calendar | Memphis, TN | https://memphistn.gov/city-council-meeting-agenda/ | HTTP 403 HTTP 403 |
 | city calendar | Arlington, TX | https://www.arlingtontx.gov/Government/Meetings-Agendas/City-Council-Meeting-Schedule/City-Council-Calendar | HTTP 403 HTTP 403 |
 | city calendar | Irving, TX | https://irvingtx.gov/index.php?section=public-meetings-calendar | HTTP 403 HTTP 403 |
 | city calendar | Lubbock, TX | https://www.mylubbock.us/AgendaCenter/City-Council-52/ | HTTP 403 HTTP 403 |

@@ -1,8 +1,8 @@
 {
- "checked_at": "2026-10-26T14:35:35Z",
+ "checked_at": "2026-11-02T17:26:56Z",
  "summary": {
-  "ok": 136,
-  "unverified": 50,
+  "ok": 138,
+  "unverified": 48,
   "broken": 0,
   "total": 186
  },
@@ -444,9 +444,9 @@
    "id": "ID/Boise",
    "name": "Boise, ID",
    "url": "https://boisecityid.iqm2.com/Citizens/Calendar.aspx",
-   "result": "unverified",
-   "status": 0,
-   "detail": "TimeoutError: The read operation timed out"
+   "result": "ok",
+   "status": 200,
+   "detail": ""
   },
   {
    "kind": "city calendar",
@@ -876,9 +876,9 @@
    "id": "TN/Memphis",
    "name": "Memphis, TN",
    "url": "https://memphistn.gov/city-council-meeting-agenda/",
-   "result": "unverified",
-   "status": 403,
-   "detail": "HTTP 403"
+   "result": "ok",
+   "status": 200,
+   "detail": ""
   },
   {
    "kind": "city calendar",
