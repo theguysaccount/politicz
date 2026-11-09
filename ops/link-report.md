@@ -1,14 +1,16 @@
 # Link report
 
-Checked 2026-11-02T17:26:56Z: 186 URLs from `politicz-data.js`. 138 ok, 48 unverified (the server refused an automated check), 0 broken.
+Checked 2026-11-09T17:49:46Z: 186 URLs from `politicz-data.js`. 136 ok, 49 unverified (the server refused an automated check), 1 broken.
 
 Written by `ops/link_check.py` (weekly workflow `link-check.yml`). Fix a broken entry in `politicz-data.js`; the state pages under `state/` carry the same URLs.
 
-## Broken (0)
+## Broken (1)
 
-None.
+| Kind | Entry | URL | Answer |
+|---|---|---|---|
+| city calendar | Memphis, TN | https://memphistn.gov/city-council-meeting-agenda/ | HTTP 502 HTTP 502 |
 
-## Unverified (48)
+## Unverified (49)
 
 | Kind | Entry | URL | Answer |
 |---|---|---|---|
@@ -58,5 +60,6 @@ None.
 | statute | Tennessee: Tennessee Open Meetings Act | https://law.justia.com/codes/tennessee/title-8/chapter-44/part-1/section-8-44-103/ | HTTP 403 HTTP 403 |
 | statute | Utah: Utah Open and Public Meetings Act | https://codes.findlaw.com/ut/title-52-public-officers/ut-code-sect-52-4-202/ | HTTP 403 HTTP 403 |
 | statute | Virginia: Virginia Freedom of Information Act | https://law.justia.com/codes/virginia/title-2-2/chapter-37/section-2-2-3707/ | HTTP 403 HTTP 403 |
+| statute | Wisconsin: Wisconsin Open Meetings Law | https://docs.legis.wisconsin.gov/statutes/statutes/19/v/84 | TimeoutError: timed out |
 | statute | West Virginia: West Virginia Open Governmental Proceedings Act | https://law.justia.com/codes/west-virginia/chapter-6/article-9a/section-6-9a-3/ | HTTP 403 HTTP 403 |
 | statute | Wyoming: Wyoming Public Meetings Act | https://law.justia.com/codes/wyoming/title-16/chapter-4/article-4/section-16-4-404/ | HTTP 403 HTTP 403 |

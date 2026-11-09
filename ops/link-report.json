@@ -1,9 +1,9 @@
 {
- "checked_at": "2026-11-02T17:26:56Z",
+ "checked_at": "2026-11-09T17:49:46Z",
  "summary": {
-  "ok": 138,
-  "unverified": 48,
-  "broken": 0,
+  "ok": 136,
+  "unverified": 49,
+  "broken": 1,
   "total": 186
  },
  "entries": [
@@ -876,9 +876,9 @@
    "id": "TN/Memphis",
    "name": "Memphis, TN",
    "url": "https://memphistn.gov/city-council-meeting-agenda/",
-   "result": "ok",
-   "status": 200,
-   "detail": ""
+   "result": "broken",
+   "status": 502,
+   "detail": "HTTP 502"
   },
   {
    "kind": "city calendar",
@@ -1659,9 +1659,9 @@
    "id": "WI",
    "name": "Wisconsin: Wisconsin Open Meetings Law",
    "url": "https://docs.legis.wisconsin.gov/statutes/statutes/19/v/84",
-   "result": "ok",
-   "status": 200,
-   "detail": ""
+   "result": "unverified",
+   "status": 0,
+   "detail": "TimeoutError: timed out"
   },
   {
    "kind": "statute",
