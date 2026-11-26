@@ -1,0 +1,10 @@
+# Politicz
+
+> Local civic engagement guide and state-by-state ballot initiative, referendum, and direct-democracy reference.
+
+## Key Pages
+
+- [Home](https://politicz.org/): Main Politicz civic hub.
+- [Thesis](https://politicz.org/thesis.html): Overview of the Politicz thesis.
+- [Law](https://politicz.org/law.html): Ballot access and direct-democracy law reference.
+- [States](https://politicz.org/state/): State-by-state guides across all 50 states and DC.
